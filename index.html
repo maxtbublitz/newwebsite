@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Bublitz</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script src="javascript/particles.js"></script>
+</head>
+
+<body>
+    
+    <div id="canvas">
+        <div id="particleContainer">
+
+            <header id="header" class="header">
+                <script>
+                    $(function(){
+                    $("#header").load("nav.html");
+                    });
+                </script>
+            </header>
+
+            <main>
+
+                <div class="gridContainer">
+
+                    <div id="coverVideo" class="defaultModule">
+                        <video width="100%" height="auto" autoplay muted playsinline>
+                            <source src="/videos/MB-No-Typography_H.265.mp4" type='video/mp4;codecs=hvc1'>
+                            <source src="/videos/MB-No-Typography_VP9.webm" type="video/webm">
+                        </video>
+                    </div>
+
+                    <div id="mb" class="defaultModule" ><h2>Max Bublitz</h2></div>
+                    <div id="design" class="defaultModule" ><h2>Design</h2></div>
+                    <div id="subHolder" class="defaultModule" >
+                        <h3>Graphic</h3>
+                        <h3>Web</h3>
+                        <h3>UI/UX</h3>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>

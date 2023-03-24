@@ -1,0 +1,93 @@
+@import "variables";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    bottom:0;
+    top:0;
+}
+
+body{
+    bottom:0;
+    top: 0;
+    left:0;
+    right: 0;
+}
+
+/* ------------------------------------- Tyopgraphy -------------------------------------*/
+
+h1{font-family: $primaryTypography; font-weight: 300; font-size: 64px;}
+h2{font-family: adelle; font-weight: 400; font-size: 32px;}
+h3{font-family: adelle; font-weight: 700; font-size: 24px;}
+h4{font-family: $primaryTypography; font-weight: 700; font-size: 18px;}
+
+P{font-family: $primaryTypography; font-weight: 400; font-size: 18px;}
+
+p, h1, h2, h3, h4{
+    margin:0;
+    padding: 0;
+}
+
+/* ------------------------------------- Grids, sizing and breakpoints  -------------------------------------*/
+
+main{
+    position:relative;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: $topMargin;
+}
+
+.gridContainer, .subGrid{ /* Used to contain nearly all elements, 12 8 4 setup */
+    position:relative;
+    display: grid;
+    
+    grid-gap: $desktopGridGap;
+    
+    align-items: start;
+    justify-items: start;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subGrid{
+    grid-template-columns: repeat(auto-fill, $desktopColumnWidth);
+}
+
+.gridContainer{
+    grid-template-columns: repeat(12, $desktopColumnWidth);
+    width: $desktopContainerWidth;
+
+    margin-bottom: 96px;
+}
+
+
+.defaultModule{ /* default settings for element in grid */
+    padding: 0;
+    margin-top: 0;
+}
+
+@media screen and (max-width:$tabletBreakpoint){ /* default tablet grid */
+    .gridContainer{
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: $tabletGaps;
+        width: auto;
+        margin-right: $tabletSideMargins;
+        margin-left: $tabletSideMargins;
+    }
+}
+
+@media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
+    .gridContainer{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: $mobileGaps;
+        margin-right: $mobileMargins;
+        margin-left: $mobileMargins;
+    }
+}
+
+

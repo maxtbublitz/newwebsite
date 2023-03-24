@@ -1,0 +1,47 @@
+@import url("https://use.typekit.net/oip8mrx.css"); 
+
+/* ---------------------------------- colors ----------------------------------*/
+
+$primaryColor: #EB3300;
+$secondaryColor: #009AD7;
+
+
+
+/* ---------------------------------- typography ---------------------------------- */
+
+$primaryTypography: Scandia, Verdana, sans-serif;
+$displayTypography: adelle, serif;
+
+
+
+/* ---------------------------------- grids n stuff ---------------------------------- */
+
+/* breakpoints and widths */
+
+$desktopContainerWidth: 1104px;
+$desktopColumnWidth: 72px;
+$desktopGridGap: 24px;
+
+$navHeight: 80px;
+$topMargin: 128px;
+
+$tabletBreakpoint: 1200px;
+$tabletSideMargins: 40px;
+$tabletGaps: 16px;
+
+
+$mobileBreakpoint: 650px;
+$mobileMargins: 16px;
+$mobileGaps: 8px;
+
+/* Navigation Menu */
+
+$barWidth: 32px;
+$barHeight: 4px;
+$hamburgerGap: 16px;
+
+$moveNav: 200px;
+
+$navigationAnimationTiming: 300ms ease-in-out;
+
+

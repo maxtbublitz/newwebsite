@@ -1,0 +1,153 @@
+@import "variables";
+
+// body, html{
+//     top:0;
+//     min-height: 100vh;
+// }
+
+.gridContainer{
+    grid-auto-rows: minmax(24px,auto);
+}
+
+#portfolioDescription{
+    grid-column: span 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#graphicFilter{
+    grid-column: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#webFilter{
+    grid-column: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#uiuxFilter{
+    grid-column: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#projectGalleryHolder{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: auto;
+    width: 100%;
+}
+
+#filterUI{
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+}
+
+.projectContainer{
+    position: relative;
+    float:left;
+    padding: 0;
+    margin-bottom: 24px;
+
+    width: 360px;
+    height: 200px;
+
+    border: 2px solid grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectContainer > * {
+    margin: 0;
+    padding: 0;
+  }
+
+.filterContainer{
+    width: 100%;
+    height: 64px;
+
+    label{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top:-16px;
+
+        background-color: $primaryColor;
+        border-radius: 16px;
+
+        h3{
+            color: white;
+
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+
+    input{
+        display:none;
+    }
+
+    label:hover{
+       cursor: pointer;
+    }
+
+    input:checked + label {
+        border: solid 2px $primaryColor;
+        background-color: white;
+        margin-top:-18px;
+
+        h3{
+            color: $primaryColor;
+        }
+    }
+}
+
+@media screen and (max-width:$tabletBreakpoint){
+    #projectGalleryHolder{
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 5;
+        grid-row-end: auto;
+        width: 100%;
+    }
+
+    #filterUI{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+    }
+
+    .projectContainer{ 
+        margin-right: -2px;
+        width: 49.4%;
+    }
+
+    // .filterContainer label{
+    //     margin-top:0px;
+    // }
+
+    // .filterContainer{
+    //     input:checked + label {
+    //         margin-top:-2px;
+    //     }
+    // }
+}
+
+
+

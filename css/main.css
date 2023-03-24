@@ -1,0 +1,112 @@
+@import url("https://use.typekit.net/oip8mrx.css");
+/* ---------------------------------- colors ----------------------------------*/
+/* ---------------------------------- typography ---------------------------------- */
+/* ---------------------------------- grids n stuff ---------------------------------- */
+/* breakpoints and widths */
+/* Navigation Menu */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  bottom: 0;
+  top: 0;
+}
+
+body {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ------------------------------------- Tyopgraphy -------------------------------------*/
+h1 {
+  font-family: Scandia, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+}
+
+h2 {
+  font-family: adelle;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: adelle;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: Scandia, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+P {
+  font-family: Scandia, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------- Grids, sizing and breakpoints  -------------------------------------*/
+main {
+  position: relative;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 128px;
+}
+
+.gridContainer, .subGrid { /* Used to contain nearly all elements, 12 8 4 setup */
+  position: relative;
+  display: grid;
+  grid-gap: 24px;
+  align-items: start;
+  justify-items: start;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subGrid {
+  grid-template-columns: repeat(auto-fill, 72px);
+}
+
+.gridContainer {
+  grid-template-columns: repeat(12, 72px);
+  width: 1104px;
+  margin-bottom: 96px;
+}
+
+.defaultModule { /* default settings for element in grid */
+  padding: 0;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) { /* default tablet grid */
+  .gridContainer {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 16px;
+    width: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 650px) { /* default mobile grid */
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

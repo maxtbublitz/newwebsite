@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
+
+    
+    
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/nav.css">
+    
+</head>
+
+<body>
+    
+    <header id="header" class="header">
+        <script>
+            $(function(){
+            $("#header").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <main>
+
+        <div class="gridContainer">
+
+            <div id="headline" class="defaultModule">
+                <h1>Portfolio</h1>
+            </div>
+
+            <div id="portfolioDescription" class="defaultModule">
+                <h3>Toggle the types of projects you want to see</h3>
+                <br>
+                <h4>If no options are toggled, all projects will be displayed</h4>
+            </div>
+
+            <div id="filterUI" class="subGrid">
+                <div id="graphicFilter" class="filterContainer">
+                    <input id="graphicCheck" type="checkbox" value=".graphic">
+                    <label for="graphicCheck"><h3>Graphic</h3></label>
+                </div>
+                <div id="webFilter" class="filterContainer">
+                    <input id="webCheck" type="checkbox" value=".web">
+                    <label for="webCheck"><h3>Web</h3></label>
+                </div>
+                <div id="uiuxFilter" class="filterContainer">
+                    <input id="uiuxCheck" type="checkbox" value=".uiux">
+                    <label for="uiuxCheck"><h3>UI/UX</h3></label>
+                </div>
+            </div>
+
+            <div id="projectGalleryHolder" class="grid">
+
+                <div id="project1" class="grid-sizer projectContainer uiux">
+                    <h3>UI/UX</h3>
+                </div>
+
+                <div id="project2" class="projectContainer graphic web">
+                    <h3>Graphic, Web</h3>
+                </div>
+
+                <div id="project3" class="projectContainer graphic">
+                    <h3>Graphic</h3>
+                </div>
+
+                <div id="project4" class="projectContainer web">
+                    <h3>Web</h3>
+                </div>
+
+                <div id="project5" class="projectContainer uiux">
+                    <h3>UI/UX</h3>
+                </div>
+
+                <div id="project6" class="projectContainer graphic">
+                    <h3>Graphic</h3>
+                </div>
+
+                <div id="project7" class="projectContainer uiux web">
+                    <h3>Web, UI/UX</h3>
+                </div>
+
+                <div id="project8" class="projectContainer graphic">
+                    <h3>Graphic</h3>
+                </div>
+
+                <div id="project9" class="projectContainer graphic">
+                    <h3>Graphic</h3>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </main>
+
+
+</body>
+
+<script src="javascript/portfolio.js"></script>
+
+
+
+</html>
