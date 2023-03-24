@@ -86,9 +86,14 @@ main {
   margin-bottom: 96px;
 }
 
+/* Default grid elements */
 .defaultModule { /* default settings for element in grid */
   padding: 0;
   margin-top: 0;
+}
+
+#headline {
+  margin-bottom: 72px;
 }
 
 @media screen and (max-width: 1200px) { /* default tablet grid */

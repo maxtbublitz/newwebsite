@@ -58,25 +58,48 @@
 }
 
 .projectContainer{
+    filter: drop-shadow(2px 2px 2px black);
     position: relative;
     float:left;
     padding: 0;
     margin-bottom: 24px;
 
     width: 32%;
-    height: 200px;
+    height: 336px;
 
-    border: 2px solid grey;
+    background-color:white;
+    // border: 2px solid $primaryColor;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 }
 
 .projectContainer > * {
     margin: 0;
     padding: 0;
-  }
+}
+
+.coverImage{
+    margin-top: 8px;
+    margin-bottom: -16px;
+    position: relative;
+    width: 92%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.descHolder{
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    // h3,h4,p{
+    //     color: white;
+    // }
+}
 
 .filterContainer{
     width: 100%;
@@ -127,7 +150,7 @@
 @media screen and (max-width:$tabletBreakpoint){
     #projectGalleryHolder{
         grid-column-start: 1;
-        grid-column-end: 10;
+        grid-column-end: 9;
         grid-row-start: 5;
         grid-row-end: auto;
         width: 100%;
@@ -151,6 +174,32 @@
     
     .gutter-sizer{
         width: 2%;
+    }
+}
+
+@media screen and (max-width:$mobileBreakpoint){
+    #projectGalleryHolder{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: auto;
+        width: 100%;
+    }
+
+    #filterUI{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+    }
+
+    .projectContainer, .grid-sizer{
+        width: 100%;
+    }
+
+    .gutter-sizer{
+        width: 0%;
     }
 }
 
