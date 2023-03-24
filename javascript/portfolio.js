@@ -1,8 +1,8 @@
 var $projectGalleryHolder = $('.grid').isotope({
     itemSelector: '.projectContainer',
     masonry: {
-      columnWidth: 72,
-      gutter: 24
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer'
     }
 });
 

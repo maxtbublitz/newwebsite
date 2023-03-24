@@ -49,13 +49,21 @@
     width: 100%;
 }
 
+.grid-sizer{
+    width: 32%;
+}
+
+.gutter-sizer{
+    width: 2%;
+}
+
 .projectContainer{
     position: relative;
     float:left;
     padding: 0;
     margin-bottom: 24px;
 
-    width: 360px;
+    width: 32%;
     height: 200px;
 
     border: 2px solid grey;
@@ -133,20 +141,17 @@
         width: 100%;
     }
 
-    .projectContainer{ 
-        margin-right: -2px;
-        width: 49.4%;
+    .projectContainer{
+        width: 48%;
     }
 
-    // .filterContainer label{
-    //     margin-top:0px;
-    // }
-
-    // .filterContainer{
-    //     input:checked + label {
-    //         margin-top:-2px;
-    //     }
-    // }
+    .grid-sizer{
+        width: 48%;
+    }
+    
+    .gutter-sizer{
+        width: 2%;
+    }
 }
 
 
