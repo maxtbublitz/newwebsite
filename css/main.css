@@ -24,8 +24,9 @@ body {
 /* ------------------------------------- Tyopgraphy -------------------------------------*/
 h1 {
   font-family: Scandia, Verdana, sans-serif;
-  font-weight: 300;
-  font-size: 64px;
+  font-weight: 500;
+  font-size: 88px;
+  color: #EB3300;
 }
 
 h2 {

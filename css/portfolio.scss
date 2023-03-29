@@ -58,18 +58,18 @@
 }
 
 .projectContainer{
-    filter: drop-shadow(2px 2px 2px black);
+    // filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.486));
     position: relative;
     float:left;
     padding: 0;
-    padding-top: 16px;
+    // padding-top: 16px;
     margin-bottom: 48px;
 
     width: 32%;
     height: 360px;
     border-radius: 8px;
-    // border: 2px solid $primaryColor;
-    background-color: white;
+    // border: 2px solid $secondaryColor;
+    background-color: rgb(245, 245, 245);
 
     display: flex;
     flex-wrap: wrap;
@@ -84,9 +84,10 @@
 
 .coverImage{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     padding:0;
     margin:0;
 }
@@ -115,7 +116,7 @@
     }
 
     p{
-        width: 75%;
+        width: 100%;
         border-top: 2px solid $secondaryColor;
         margin-top: 8px;
         padding-top: 8px;
@@ -137,7 +138,7 @@
 
         margin-top:-16px;
 
-        background-color: $primaryColor;
+        background-color: $secondaryColor;
         border-radius: 16px;
 
         h3{
@@ -160,12 +161,12 @@
     }
 
     input:checked + label {
-        border: solid 2px $primaryColor;
+        border: solid 2px $secondaryColor;
         background-color: white;
         margin-top:-18px;
 
         h3{
-            color: $primaryColor;
+            color: $secondaryColor;
         }
     }
 }

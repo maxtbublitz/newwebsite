@@ -50,7 +50,7 @@ body, html {
   text-align: right;
   font-family: Scandia, Verdana, sans-serif;
   animation: movesub;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 #design {
@@ -168,7 +168,7 @@ body, html {
 @media screen and (min-width: 1200px) {
   #design, #mb, #subHolder {
     animation: moveName;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
 }
