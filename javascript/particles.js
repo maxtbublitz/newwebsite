@@ -7,6 +7,9 @@ let spouts = [];
 let maxDistance = screen.width+100;
 let randNumber = 5;
 
+let startColor = 255;
+let endColor = 252;
+
 var canvas;
 
 function setup() {
@@ -15,12 +18,13 @@ function setup() {
   canvas = createCanvas(windowWidth, scrollH);
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  let fr = 30;
+  
+  changeBackgroundColor();
   addSpouts();
 }
 
 function draw() {
-  background(255,255,255);
+  background(startColor,startColor,startColor);
 
   for(let i =  0; i < spouts.length; i++){
     spouts[i].show();
@@ -47,7 +51,12 @@ function windowResized(){
   doit = setTimeout(calcResize, 500);
 }
 
-
+function changeBackgroundColor() {
+  if(startColor > endColor){
+    startColor -= 1;
+    setTimeout(changeBackgroundColor,2000);
+  }
+}
 
 function addSpouts() { // Randomly adds spouts
   var rand = random(1,4);

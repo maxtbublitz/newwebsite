@@ -5,12 +5,25 @@
 //     min-height: 100vh;
 // }
 
+body{
+    background-color: rgb(253, 253, 253);
+}
+
 .gridContainer{
     grid-auto-rows: minmax(24px,auto);
 }
 
+#headline{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+}
+
 #portfolioDescription{
-    grid-column: span 6;
+    grid-column-start: 2;
+    grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -42,10 +55,10 @@
 }
 
 #filterUI{
-    grid-column-start: 7;
-    grid-column-end: 13;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
     width: 100%;
 }
 
@@ -58,18 +71,15 @@
 }
 
 .projectContainer{
-    // filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.486));
     position: relative;
     float:left;
     padding: 0;
-    // padding-top: 16px;
     margin-bottom: 48px;
 
     width: 32%;
     height: 360px;
-    border-radius: 8px;
-    // border: 2px solid $secondaryColor;
-    background-color: rgb(245, 245, 245);
+    border-radius: 24px;
+    background-color: $greyColor;
 
     display: flex;
     flex-wrap: wrap;
@@ -86,8 +96,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
     padding:0;
     margin:0;
 }
@@ -109,7 +117,7 @@
 
     h3, p{
         // text-align: center;
-        // color: $primaryColor;
+        color: white;
  
         padding:0px;
         margin:0px;
@@ -117,7 +125,7 @@
 
     p{
         width: 100%;
-        border-top: 2px solid $secondaryColor;
+        border-top: 2px solid white;
         margin-top: 8px;
         padding-top: 8px;
     }
@@ -136,7 +144,7 @@
         align-items: center;
         justify-content: center;
 
-        margin-top:-16px;
+        margin-top:-18px;
 
         background-color: $secondaryColor;
         border-radius: 16px;
@@ -161,9 +169,12 @@
     }
 
     input:checked + label {
+        
         border: solid 2px $secondaryColor;
         background-color: white;
-        margin-top:-18px;
+        margin:-2px;
+        margin-top:-20px;
+        
 
         h3{
             color: $secondaryColor;
@@ -180,6 +191,20 @@
         width: 100%;
     }
 
+    #headline{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 2;  
+    }
+
+    #portfolioDescription{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
     #filterUI{
         grid-column-start: 1;
         grid-column-end: 9;
@@ -189,11 +214,11 @@
     }
 
     .projectContainer{
-        width: 48%;
+        width: 49%;
     }
 
     .grid-sizer{
-        width: 48%;
+        width: 49%;
     }
     
     .gutter-sizer{

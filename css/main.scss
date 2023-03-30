@@ -17,9 +17,13 @@ body{
     right: 0;
 }
 
+#header{
+    position: fixed;
+}
+
 /* ------------------------------------- Tyopgraphy -------------------------------------*/
 
-h1{font-family: $primaryTypography; font-weight: 500; font-size: 88px; color: $primaryColor}
+h1{font-family: $primaryTypography; font-weight: 500; font-size: 88px; color: black}
 h2{font-family: adelle; font-weight: 400; font-size: 32px;}
 h3{font-family: adelle; font-weight: 700; font-size: 24px;}
 h4{font-family: $primaryTypography; font-weight: 700; font-size: 18px;}
@@ -74,6 +78,7 @@ main{
 
 #headline{
     margin-bottom: 72px;
+    border-bottom: 3px solid $primaryColor;
 }
 
 @media screen and (max-width:$tabletBreakpoint){ /* default tablet grid */

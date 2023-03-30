@@ -4,12 +4,25 @@
 /* ---------------------------------- grids n stuff ---------------------------------- */
 /* breakpoints and widths */
 /* Navigation Menu */
+body {
+  background-color: rgb(253, 253, 253);
+}
+
 .gridContainer {
   grid-auto-rows: minmax(24px, auto);
 }
 
+#headline {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 #portfolioDescription {
-  grid-column: span 6;
+  grid-column-start: 2;
+  grid-column-end: 13;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -41,10 +54,10 @@
 }
 
 #filterUI {
-  grid-column-start: 7;
-  grid-column-end: 13;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 4;
   width: 100%;
 }
 
@@ -63,8 +76,8 @@
   margin-bottom: 48px;
   width: 32%;
   height: 360px;
-  border-radius: 8px;
-  background-color: rgb(245, 245, 245);
+  border-radius: 24px;
+  background-color: #00435e;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -75,8 +88,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
   padding: 0;
   margin: 0;
 }
@@ -93,12 +104,13 @@
   bottom: 0px;
 }
 .descHolder h3, .descHolder p {
+  color: white;
   padding: 0px;
   margin: 0px;
 }
 .descHolder p {
   width: 100%;
-  border-top: 2px solid #009AD7;
+  border-top: 2px solid white;
   margin-top: 8px;
   padding-top: 8px;
 }
@@ -113,7 +125,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -16px;
+  margin-top: -18px;
   background-color: #009AD7;
   border-radius: 16px;
 }
@@ -134,7 +146,8 @@
 .filterContainer input:checked + label {
   border: solid 2px #009AD7;
   background-color: white;
-  margin-top: -18px;
+  margin: -2px;
+  margin-top: -20px;
 }
 .filterContainer input:checked + label h3 {
   color: #009AD7;
@@ -148,6 +161,18 @@
     grid-row-end: auto;
     width: 100%;
   }
+  #headline {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #portfolioDescription {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
   #filterUI {
     grid-column-start: 1;
     grid-column-end: 9;
@@ -156,10 +181,10 @@
     width: 100%;
   }
   .projectContainer {
-    width: 48%;
+    width: 49%;
   }
   .grid-sizer {
-    width: 48%;
+    width: 49%;
   }
   .gutter-sizer {
     width: 2%;

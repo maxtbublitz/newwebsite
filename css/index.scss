@@ -196,6 +196,15 @@ body, html{
     }
 }
 
+@keyframes fadeGrey {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: $lightestGrey;
+    }
+}
+
 
 @keyframes moveName {
     0%{

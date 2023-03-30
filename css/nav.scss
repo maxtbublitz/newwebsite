@@ -134,3 +134,10 @@ nav{
         gap: 30px;
     }
 }
+
+@media screen and (max-width:$tabletBreakpoint){
+  #imgIcon{ /*logo icon*/
+    grid-column-start:8;
+    grid-column-end: 9;
+  }
+}

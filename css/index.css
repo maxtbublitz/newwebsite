@@ -172,6 +172,14 @@ body, html {
     animation-fill-mode: forwards;
   }
 }
+@keyframes fadeGrey {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgb(250, 250, 250);
+  }
+}
 @keyframes moveName {
   0% {
     color: rgba(255, 255, 255, 0);

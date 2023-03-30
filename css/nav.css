@@ -158,5 +158,11 @@ nav a:hover {
     gap: 30px;
   }
 }
+@media screen and (max-width: 1200px) {
+  #imgIcon { /*logo icon*/
+    grid-column-start: 8;
+    grid-column-end: 9;
+  }
+}
 
 /*# sourceMappingURL=nav.css.map */

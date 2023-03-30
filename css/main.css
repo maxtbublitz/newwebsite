@@ -21,12 +21,16 @@ body {
   right: 0;
 }
 
+#header {
+  position: fixed;
+}
+
 /* ------------------------------------- Tyopgraphy -------------------------------------*/
 h1 {
   font-family: Scandia, Verdana, sans-serif;
   font-weight: 500;
   font-size: 88px;
-  color: #EB3300;
+  color: black;
 }
 
 h2 {
@@ -95,6 +99,7 @@ main {
 
 #headline {
   margin-bottom: 72px;
+  border-bottom: 3px solid #EB3300;
 }
 
 @media screen and (max-width: 1200px) { /* default tablet grid */
