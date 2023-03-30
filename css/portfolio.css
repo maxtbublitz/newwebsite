@@ -18,29 +18,23 @@ body {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
+  overflow: hidden;
+}
+#headline h1 {
+  animation: moveHeading;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 #portfolioDescription {
-  grid-column-start: 2;
-  grid-column-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 7;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-#graphicFilter {
-  grid-column: span 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#webFilter {
-  grid-column: span 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-#uiuxFilter {
-  grid-column: span 2;
+#graphicFilter, #uiuxFilter, #webFilter {
+  grid-column: span 4;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -54,8 +48,8 @@ body {
 }
 
 #filterUI {
-  grid-column-start: 2;
-  grid-column-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 13;
   grid-row-start: 3;
   grid-row-end: 4;
   width: 100%;
@@ -76,8 +70,6 @@ body {
   margin-bottom: 48px;
   width: 32%;
   height: 360px;
-  border-radius: 24px;
-  background-color: #00435e;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -95,29 +87,27 @@ body {
 .descHolder {
   position: relative;
   border-radius: 8px;
-  width: 88%;
+  width: 100%;
   margin-left: -2px;
   margin-right: -2px;
   margin-top: 8px;
   margin-bottom: 32px;
-  padding: 8px;
   bottom: 0px;
-}
-.descHolder h3, .descHolder p {
-  color: white;
-  padding: 0px;
-  margin: 0px;
 }
 .descHolder p {
   width: 100%;
-  border-top: 2px solid white;
   margin-top: 8px;
-  padding-top: 8px;
+}
+.descHolder h3 {
+  width: 80%;
+  border-bottom: 2px solid #009AD7;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 .filterContainer {
   width: 100%;
-  height: 48px;
+  height: 40px;
 }
 .filterContainer label {
   width: 100%;
@@ -126,11 +116,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: -18px;
-  background-color: #009AD7;
+  background-color: #EB3300;
   border-radius: 16px;
 }
 .filterContainer label h3 {
   color: white;
+  margin-bottom: -4px;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -144,13 +135,13 @@ body {
   cursor: pointer;
 }
 .filterContainer input:checked + label {
-  border: solid 2px #009AD7;
+  border: solid 2px #EB3300;
   background-color: white;
   margin: -2px;
   margin-top: -20px;
 }
 .filterContainer input:checked + label h3 {
-  color: #009AD7;
+  color: #EB3300;
 }
 
 @media screen and (max-width: 1200px) {
@@ -210,6 +201,14 @@ body {
   }
   .gutter-sizer {
     width: 0%;
+  }
+}
+@keyframes moveHeading {
+  0% {
+    translate: 0px 300px;
+  }
+  100% {
+    margin-bottom: 0px 0px;
   }
 }
 

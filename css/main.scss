@@ -23,12 +23,12 @@ body{
 
 /* ------------------------------------- Tyopgraphy -------------------------------------*/
 
-h1{font-family: $primaryTypography; font-weight: 500; font-size: 88px; color: black}
-h2{font-family: adelle; font-weight: 400; font-size: 32px;}
-h3{font-family: adelle; font-weight: 700; font-size: 24px;}
-h4{font-family: $primaryTypography; font-weight: 700; font-size: 18px;}
+h1{font-family: $primaryTypography; font-weight: 600; font-size: 88px; color: black}
+h2{font-family: $primaryTypography; font-weight: 400; font-size: 48px;}
+h3{font-family: $primaryTypography; font-weight: 600; font-size: 24px;}
+h4{font-family: $primaryTypography; font-weight: 700; font-size: 16px;}
 
-P{font-family: $primaryTypography; font-weight: 400; font-size: 18px;}
+P{font-family: $primaryTypography; font-weight: 400; font-size: 16px;}
 
 p, h1, h2, h3, h4{
     margin:0;

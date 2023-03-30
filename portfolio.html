@@ -8,14 +8,13 @@
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
-
-    
     
     
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 
@@ -34,11 +33,11 @@
         <div class="gridContainer">
 
             <div id="headline" class="defaultModule">
-                <h1>Portfolio</h1>
+                <h1 id="moveHeading">Portfolio</h1>
             </div>
 
             <div id="portfolioDescription" class="defaultModule">
-                <h3>Toggle the types of projects you want to see</h3>
+                <h2>Toggle the types of projects you want to see</h2>
                 <br>
                 <p>If no options are toggled, all projects will be displayed. Click on a card to learn more about the project.</p>
             </div>
@@ -62,7 +61,7 @@
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
 
-                <div id="project1" class="projectContainer web uiux">
+                <div id="project1" class="projectContainer web uiux" data-aos="fade-up">
                     <img class="coverImage" src="photos\pjct-cover-breatheasy.jpg" alt="">
                     <div class="descHolder">
                         <h3>Breatheasy</h3>
@@ -70,7 +69,7 @@
                     </div>
                 </div>
 
-                <div id="project2" class="projectContainer graphic web">
+                <div id="project2" class="projectContainer graphic web" data-aos="fade-up">
                     <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
                     <div class="descHolder">
                         <h3>Sport Cards</h3>
@@ -78,7 +77,7 @@
                     </div>
                 </div>
 
-                <div id="project3" class="projectContainer graphic">
+                <div id="project3" class="projectContainer graphic" data-aos="fade-up">
                     <img class="coverImage" src="photos\prjt-cover-spec.jpg" alt="">
                     <div class="descHolder">
                         <h3>Technical Booklets</h3>
@@ -86,27 +85,27 @@
                     </div>
                 </div>
 
-                <div id="project4" class="projectContainer web">
+                <div id="project4" class="projectContainer web" data-aos="fade-up">
                     <h3>Web</h3>
                 </div>
 
-                <div id="project5" class="projectContainer uiux">
+                <div id="project5" class="projectContainer uiux" data-aos="fade-up">
                     <h3>UI/UX</h3>
                 </div>
 
-                <div id="project6" class="projectContainer graphic">
+                <div id="project6" class="projectContainer graphic" data-aos="fade-up">
                     <h3>Graphic</h3>
                 </div>
 
-                <div id="project7" class="projectContainer uiux web">
+                <div id="project7" class="projectContainer uiux web" data-aos="fade-up">
                     <h3>Web, UI/UX</h3>
                 </div>
 
-                <div id="project8" class="projectContainer graphic">
+                <div id="project8" class="projectContainer graphic" data-aos="fade-up">
                     <h3>Graphic</h3>
                 </div>
 
-                <div id="project9" class="projectContainer graphic">
+                <div id="project9" class="projectContainer graphic" data-aos="fade-up">
                     <h3>Graphic</h3>
                 </div>
 
@@ -122,6 +121,19 @@
 </body>
 
 <script src="javascript/portfolio.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
+</script>
 
 
 
