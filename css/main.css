@@ -100,6 +100,17 @@ main {
 #headline {
   margin-bottom: 72px;
   border-bottom: 3px solid #EB3300;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  overflow: hidden;
+}
+#headline h1 {
+  animation: moveHeading;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 1200px) { /* default tablet grid */
@@ -117,6 +128,14 @@ main {
     grid-gap: 8px;
     margin-right: 16px;
     margin-left: 16px;
+  }
+}
+@keyframes moveHeading {
+  0% {
+    translate: 0px 300px;
+  }
+  100% {
+    margin-bottom: 0px 0px;
   }
 }
 

@@ -12,20 +12,6 @@ body {
   grid-auto-rows: minmax(24px, auto);
 }
 
-#headline {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  overflow: hidden;
-}
-#headline h1 {
-  animation: moveHeading;
-  animation-duration: 1s;
-  transition-timing-function: ease-in-out;
-}
-
 #portfolioDescription {
   grid-column-start: 1;
   grid-column-end: 7;
@@ -201,14 +187,6 @@ body {
   }
   .gutter-sizer {
     width: 0%;
-  }
-}
-@keyframes moveHeading {
-  0% {
-    translate: 0px 300px;
-  }
-  100% {
-    margin-bottom: 0px 0px;
   }
 }
 

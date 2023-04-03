@@ -1,0 +1,101 @@
+@import "variables";
+
+textarea {
+    resize: none;
+}
+
+.shortAnswer, .longAnswer{
+    width: 100%;
+}
+
+.longAnswer {
+    height: 72px;
+}
+
+.checkbox{
+    position: relative;
+    font-size: 16px;
+    color: black;
+    display: block;
+    padding-left: 24px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.checkbox input{
+    position: absolute;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.check{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border: 1px solid black;
+    left: 0;
+    margin: -1px;
+    margin-left: 0px;
+}
+
+.checkbox input:checked ~ .check{
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+
+.check::after{
+    content:"";
+    position: absolute;
+    width: 4px;
+    height:10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    left: 5px;
+    top: 1px;
+    transform: rotate(45deg);
+}
+
+label{
+    font-family: $primaryTypography;
+    font-size: 16px;
+}
+
+#send {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border-radius: 8px;
+
+    color: white;
+    background-color: $primaryColor;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+  
+#send:hover {
+    background-color: $secondaryColor;
+    cursor: pointer;
+}
+
+#contactForm{
+    width: 100%;
+    display:block;
+    grid-row-start: 2;
+    grid-row-end: auto;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+#nameQ, #emailQ, #helpQ, #descQ{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    min-height: 56px;
+}
+
+#helpQ p{
+    display: inline-block;
+    margin-left: 8px;
+}

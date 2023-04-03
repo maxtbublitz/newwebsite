@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
+    
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>
+    
+    <header id="header" class="header">
+        <script>
+            $(function(){
+            $("#header").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <main>
+
+        <div class="gridContainer">
+
+            <div id="headline" class="defaultModule">
+                <h1 id="moveHeading">Contact</h1>
+            </div>
+
+            
+            <form  id="contactForm" class="subGrid" action="https://formsubmit.co/maxtbublitz@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Web Submission">
+                <input type="hidden" name="_next" value="http://maxbublitz.com/thankYouPage.html">
+                <input type="text" name="_honey" style="display:none">
+
+                <div id="nameQ" class="defaultModule">
+                    <h4>Name</h4>
+                    <input type="text" id="aName" name="name" class="shortAnswer" required>
+                </div>
+                
+                <div id="emailQ" class="defaultModule">
+                    <h4>Email</h4>
+                    <input type="email" id="aEmail" name="email" class="shortAnswer" required>
+                </div>
+                
+
+                <br>
+
+        
+                <div id="helpQ" class="defaultModule">
+                    <h4>How can I help?</h4>
+
+                    <label class="checkbox">Graphic
+                        <input type="checkbox" id="aGraphic" name="graphic"> <span class="check"></span>
+                    </label>
+                    <label class="checkbox">Web
+                        <input type="checkbox" id="aWeb" name="web"><span class="check"></span>
+                    </label>
+                    <label class="checkbox">UI/UX
+                        <input type="checkbox" id="aUIUX" name="UIUX"><span class="check"></span>
+                    </label>
+                    <label class="checkbox">Motion Graphics
+                    <input type="checkbox" id="aMotion" name="motion"><span class="check"></span>
+                    </label>
+                    <label class="checkbox">Other
+                    <input type="checkbox" id="aOther" name="other"><span class="check"></span>
+                    </label>
+                </div>
+
+                <br>
+                <br>
+                
+                <div id="descQ">
+                    <h4>Brief description of project/inquiry</h4>
+                    <textarea class="longAnswer" name="description" rows="5" cols="33" maxlength="200"></textarea>
+                </div>
+                
+                <br>
+                <br>
+
+                <button type="submit" id="send">Send</button>
+
+            </form>
+
+            <br>
+
+   
+
+        </div>
+    </main>
+
+
+</body>
+
+
+</html>
