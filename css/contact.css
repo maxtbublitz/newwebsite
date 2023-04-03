@@ -9,7 +9,13 @@ textarea {
 }
 
 .shortAnswer, .longAnswer {
+  border-radius: 0px;
+  border: 1px solid black;
   width: 100%;
+}
+
+.shortAnswer {
+  height: 16px;
 }
 
 .longAnswer {
@@ -68,13 +74,14 @@ label {
 
 #send {
   width: 100%;
-  padding: 8px;
   margin: 0;
   border-radius: 8px;
+  height: 24px;
   color: white;
   background-color: #EB3300;
   text-decoration: none;
   text-align: center;
+  font-weight: 800;
   border: none;
 }
 

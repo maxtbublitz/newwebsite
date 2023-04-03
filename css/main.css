@@ -113,7 +113,7 @@ main {
   transition-timing-function: ease-in-out;
 }
 
-@media screen and (max-width: 1200px) { /* default tablet grid */
+@media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */
   .gridContainer {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 16px;
@@ -126,6 +126,7 @@ main {
   .gridContainer {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 8px;
+    width: auto;
     margin-right: 16px;
     margin-left: 16px;
   }
