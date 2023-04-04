@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfilio</title>
+    <title>About</title>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
@@ -31,127 +31,28 @@
     <main>
 
         <div class="gridContainer">
-
             <div id="headline" class="defaultModule">
-                <h1 id="moveHeading">Portfolio</h1>
+                <h1 id="moveHeading">About</h1>
             </div>
 
-            <div id="portfolioDescription" class="defaultModule">
-                <h2>Toggle the types of projects you want to see</h2>
-                <br>
-                <p>If no options are toggled, all projects will be displayed. Click on a card to learn more about the project.</p>
-            </div>
+            <h2 id="tagline">Overstepping the boundaries of conventional design</h2>
 
-            <div id="filterUI" class="subGrid">
-                <div id="graphicFilter" class="filterContainer">
-                    <input id="graphicCheck" type="checkbox" value=".graphic">
-                    <label for="graphicCheck"><h3>Graphic</h3></label>
-                </div>
-                <div id="webFilter" class="filterContainer">
-                    <input id="webCheck" type="checkbox" value=".web">
-                    <label for="webCheck"><h3>Web</h3></label>
-                </div>
-                <div id="uiuxFilter" class="filterContainer">
-                    <input id="uiuxCheck" type="checkbox" value=".uiux">
-                    <label for="uiuxCheck"><h3>UI/UX</h3></label>
-                </div>
-            </div>
+            <p id="paragraph1">Max Bublitz is a visual designer and programmer who specializes in graphic design, web design and development, and UI/UX design. Max graduated the University of Colorado, Boulder in 2021 with a Bacchelors of Science in Creative Technology Design (CTD). The CTD program blends arts and engineering, giving students a background in visual design and computer programming. For his Senior Thesis, Max designed a semi-virtual interactive experience for children undergoing anethesia to lower their anxiety, and was able to sucessfully impliment the project during two elective surgeries.</p>
 
-            <div id="projectGalleryHolder" class="grid">
-                <div class="grid-sizer"></div>
-                <div class="gutter-sizer"></div>
-
-                <div id="project1" class="projectContainer web uiux" data-aos="fade-up">
-                    <img class="coverImage" src="photos\pjct-cover-breatheasy.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Breatheasy</h3>
-                        <p>UI/UX + Web</p>
-                    </div>
-                </div>
-
-                <div id="project2" class="projectContainer graphic web" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Sport Cards</h3>
-                        <p>Graphic</p>
-                    </div>
-                </div>
-
-
-                <div id="project3" class="projectContainer uiux graphic" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjct-cover-egobro-old.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>EgoBro</h3>
-                        <p>Graphic + UI/UX</p>
-                    </div>
-                </div>
-
-                <div id="project4" class="projectContainer graphic" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjt-cover-spec.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Technical Booklets</h3>
-                        <p>Graphic</p>
-                    </div>
-                </div>
-
-                <div id="project5" class="projectContainer graphic" data-aos="fade-up">
-                    <img class="coverImage" src="photos\pjct-cover-vita.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Vita Inclinata</h3>
-                        <p>Graphic</p>
-                    </div>
-                </div>
-
-                <div id="project6" class="projectContainer uiux web" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>ROI Calculator</h3>
-                        <p>UI/UX + Web</p>
-                    </div>
-                </div>
-
-                <div id="project7" class="projectContainer graphic" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjt-cover-qtc.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Audio Visulatization</h3>
-                        <p>Motion Graphic</p>
-                    </div>
-                </div>
-
-                <div id="project8" class="projectContainer graphic" data-aos="fade-up">
-                    <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
-                    <div class="descHolder">
-                        <h3>Logofolio</h3>
-                        <p>Graphic</p>
-                    </div>
-                </div>
-
-            </div>
-
-            
-
+            <img src="photos\MBGrey.jpg" alt="" id="aboutCover">
         </div>
 
     </main>
 
+    <footer id="footer"></footer>
 
 </body>
 
-<script src="javascript/portfolio.js"></script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true,
-    delay: 300, 
-    duration: 600, 
-    easing: 'ease-in-out', 
-  }
-
-  );
+    $(function(){
+    $("#footer").load("footer.html");
+    });
 </script>
-
 
 
 </html>

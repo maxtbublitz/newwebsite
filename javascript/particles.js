@@ -14,8 +14,8 @@ var canvas;
 
 function setup() {
   let scroll = document.getElementById("particleContainer");
-  let scrollH = scroll.scrollHeight;
-  canvas = createCanvas(windowWidth, scrollH);
+  // let scrollH = scroll.scrollHeight;
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
   

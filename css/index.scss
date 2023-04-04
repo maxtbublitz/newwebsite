@@ -10,6 +10,10 @@ body, html{
     grid-auto-rows: minmax(24px,auto);
 }
 
+#particleContainer{
+    height: 100vh;
+}
+
 #coverVideo{
     grid-column-start: 1;
     grid-column-end: 5;

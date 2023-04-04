@@ -114,21 +114,42 @@ main {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */
-  .gridContainer {
+  .gridContainer, .subGrid {
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 16px;
     width: auto;
     margin-right: 40px;
     margin-left: 40px;
   }
+  .subGrid {
+    margin: 0;
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 650px) { /* default mobile grid */
-  .gridContainer {
+  .gridContainer, .subGrid {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 8px;
     width: auto;
     margin-right: 16px;
     margin-left: 16px;
+  }
+  .subGrid {
+    margin: 0;
+  }
+  #headline {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: auto;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 56px;
   }
 }
 @keyframes moveHeading {

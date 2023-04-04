@@ -130,7 +130,7 @@ body {
   color: #EB3300;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 651px) {
   #projectGalleryHolder {
     grid-column-start: 1;
     grid-column-end: 9;
@@ -157,6 +157,11 @@ body {
     grid-row-end: 4;
     width: 100%;
   }
+  #graphicFilter, #uiuxFilter, #webFilter {
+    grid-column: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
   .projectContainer {
     width: 49%;
   }
@@ -171,15 +176,44 @@ body {
   #projectGalleryHolder {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 5;
+    grid-row-start: 6;
     grid-row-end: auto;
     width: 100%;
+    margin-top: 56px;
+  }
+  .filterContainer label {
+    margin-top: 24px;
+  }
+  .filterContainer input:checked + label {
+    border: solid 2px #EB3300;
+    background-color: white;
+    margin: -4px;
+    margin-top: 24px;
+  }
+  .filterContainer input:checked + label h3 {
+    color: #EB3300;
+  }
+  #graphicFilter, #uiuxFilter, #webFilter {
+    margin: 0px;
+    grid-column: span 4;
+  }
+  #graphicFilter {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #uiuxFilter {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #webFilter {
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   #filterUI {
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 5;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 6;
     width: 100%;
   }
   .projectContainer, .grid-sizer {

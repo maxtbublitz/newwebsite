@@ -20,9 +20,9 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
-  height: 100%;
   padding: 0;
   padding-top: 48px;
+  padding-bottom: 88px;
   z-index: 8;
   background-color: white;
   border-top: 3px solid #EB3300;
@@ -109,17 +109,18 @@ nav a:hover {
   width: 100%;
 }
 .footerSocialContainer a {
-  color: #009AD7;
   text-decoration: none;
 }
 .footerSocialContainer a i {
   font-size: 24px;
   width: auto;
+  color: #009AD7;
 }
 .footerSocialContainer a P {
   display: inline-block;
   font-size: 24px;
   margin-left: 8px;
+  color: black;
 }
 .footerSocialContainer a:hover {
   color: #EB3300;
@@ -212,6 +213,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+  #imgIcon { /*logo icon*/
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
   #socialContainer1, #socialContainer2, #socialContainer3, #footerCaption {
     grid-column-start: 1;

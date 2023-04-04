@@ -92,23 +92,41 @@ main{
 }
 
 @media screen and (max-width:$tabletBreakpoint) and (min-width:651px){ /* default tablet grid */
-    .gridContainer{
+    .gridContainer, .subGrid{
         grid-template-columns: repeat(8, 1fr);
         grid-gap: $tabletGaps;
         width: auto;
         margin-right: $tabletSideMargins;
         margin-left: $tabletSideMargins;
     }
+
+    .subGrid{
+        margin: 0;
+    }
+
+    h2{font-size: 40px;}
 }
 
 @media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
-    .gridContainer{
+    .gridContainer, .subGrid{
         grid-template-columns: repeat(4, 1fr);
         grid-gap: $mobileGaps;
         width: auto;
         margin-right: $mobileMargins;
         margin-left: $mobileMargins;
     }
+
+    .subGrid{
+        margin: 0;
+    }
+
+    #headline{
+        grid-column-start: 1; grid-column-end: 5; grid-row-start: 1; grid-row-end: auto;  
+    }
+
+    h2{font-size: 32px;}
+    h1{font-size: 56px;}
+    
 }
 
 @keyframes moveHeading {

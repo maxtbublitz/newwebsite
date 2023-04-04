@@ -106,3 +106,36 @@ label{
     display: inline-block;
     margin-left: 8px;
 }
+
+@media screen and (max-width:$tabletBreakpoint) and (min-width:651px){ /* default tablet grid */
+    #contactForm{
+        width: 100%;
+        display:block;
+        grid-row-start: 2;
+        grid-row-end: auto;
+        grid-column-start: 2;
+        grid-column-end: 8;
+    }
+
+    #nameQ, #emailQ, #helpQ, #descQ{
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+}
+
+@media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
+    #contactForm{
+        width: 100%;
+        display:block;
+        grid-row-start: 2;
+        grid-row-end: auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #nameQ, #emailQ, #helpQ, #descQ{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}

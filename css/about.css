@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/oip8mrx.css");
+/* ---------------------------------- colors ----------------------------------*/
+/* ---------------------------------- typography ---------------------------------- */
+/* ---------------------------------- grids n stuff ---------------------------------- */
+/* breakpoints and widths */
+/* Navigation Menu */
+#tagline {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  height: 320px;
+}
+
+#paragraph1 {
+  grid-column: 2/6;
+  grid-row: 4/3;
+}
+
+#aboutCover {
+  grid-column: 7/13;
+  grid-row: 3/auto;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */ }
+@media screen and (max-width: 650px) { /* default mobile grid */ }
+
+/*# sourceMappingURL=about.css.map */
