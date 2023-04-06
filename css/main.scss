@@ -23,17 +23,18 @@ body{
 
 /* ------------------------------------- Tyopgraphy -------------------------------------*/
 
-h1{font-family: $primaryTypography; font-weight: 600; font-size: 88px; color: black}
-h2{font-family: $primaryTypography; font-weight: 400; font-size: 48px;}
-h3{font-family: $primaryTypography; font-weight: 600; font-size: 24px;}
-h4{font-family: $primaryTypography; font-weight: 700; font-size: 16px;}
-
-P{font-family: $primaryTypography; font-weight: 400; font-size: 16px;}
-
 p, h1, h2, h3, h4{
     margin:0;
     padding: 0;
 }
+
+h1{font-family: $primaryTypography; font-weight: 600; font-size: 88px; color: black; line-height: 104px; margin-bottom: 32px;}
+h2{font-family: $primaryTypography; font-weight: 400; font-size: 48px; line-height: 56px; margin-bottom: 16px;}
+h3{font-family: $primaryTypography; font-weight: 600; font-size: 24px; line-height: 32px; margin-bottom: 8px;}
+h4{font-family: $primaryTypography; font-weight: 700; font-size: 16px; line-height: 24px; margin-bottom: 8px;}
+
+P{font-family: $primaryTypography; font-weight: 400; font-size: 16px; line-height: 24px; margin-bottom: 8px;}
+
 
 /* ------------------------------------- Grids, sizing and breakpoints  -------------------------------------*/
 
@@ -49,7 +50,8 @@ main{
     position:relative;
     display: grid;
     
-    grid-gap: $desktopGridGap;
+    grid-column-gap: $desktopGridGap;
+    grid-row-gap: 16px;
     
     align-items: start;
     justify-items: start;
@@ -64,6 +66,7 @@ main{
 
 .gridContainer{
     grid-template-columns: repeat(12, $desktopColumnWidth);
+    
     width: $desktopContainerWidth;
 
     margin-bottom: 96px;
@@ -77,7 +80,6 @@ main{
 }
 
 #headline{
-    margin-bottom: 72px;
     border-bottom: 3px solid $primaryColor;
 
     width: 100%;
