@@ -72,6 +72,24 @@ P {
   margin-bottom: 8px;
 }
 
+a {
+  color: #009AD7;
+  text-decoration: none;
+}
+a i {
+  font-size: 24px;
+  width: auto;
+}
+a p {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+a:hover {
+  color: #EB3300;
+}
+
 /* ------------------------------------- Grids, sizing and breakpoints  -------------------------------------*/
 main {
   position: relative;

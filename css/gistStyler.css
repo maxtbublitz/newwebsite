@@ -1,0 +1,91 @@
+.codeContainer .gist .highlight {
+    background: #191a1a;
+}
+.codeContainer .gist .blob-num,
+.codeContainer .gist .blob-code-inner,
+.codeContainer .gist .pl-ent,
+.codeContainer .gist .pl-s1,
+.codeContainer .gist .pl-s1 .pl-s2,
+.codeContainer .gist .pl-smi,
+.codeContainer .gist .pl-smp,
+.codeContainer .gist .pl-stj,
+.codeContainer .gist .pl-vo,
+.codeContainer .gist .pl-vpf {
+    color: #e0e2e4;
+}
+.codeContainer .gist .pl-c,
+.codeContainer .gist .pl-c span {
+    color: #66747b;
+    font-style: italic;
+}
+.codeContainer .gist .pl-mb {
+    color: $primaryColor;
+    font-weight: 700;
+}
+.codeContainer .gist .pl-mh .pl-en {
+    color: #2ee455;
+    font-weight: 700;
+}
+.codeContainer .gist .pl-mi {
+    color: #e91b9a;
+    font-style: italic;
+}
+.codeContainer .gist .pl-sc {
+    color: #96989a;
+}
+.codeContainer .gist .pl-st {
+    color: #da4236;
+}
+.codeContainer .gist .pl-c1>.pl-c1 {
+    color: #d129bb;
+}
+.codeContainer .gist .pl-c1,
+.codeContainer .gist .pl-sr .pl-cce {
+    color: #ffcd22;
+}
+.codeContainer .gist .pl-e,
+.codeContainer .gist .pl-k,
+.codeContainer .gist .pl-mdh,
+.codeContainer .gist .pl-mdr,
+.codeContainer .gist .pl-ml,
+.codeContainer .gist .pl-mm,
+.codeContainer .gist .pl-mo,
+.codeContainer .gist .pl-mp,
+.codeContainer .gist .pl-mr,
+.codeContainer .gist .pl-ms,
+.codeContainer .gist .pl-s1 .pl-v,
+.codeContainer .gist .pl-s3 {
+    color: #0eb5e7;
+}
+.codeContainer .gist .pl-en,
+.codeContainer .gist .pl-v {
+    color: #4a81b8;
+}
+.codeContainer .gist .pl-mh,
+.codeContainer .gist .pl-mq {
+    color: #537180;
+}
+.codeContainer .gist .pl-pds,
+.codeContainer .gist .pl-s,
+.codeContainer .gist .pl-s1 .pl-pse .pl-s2,
+.codeContainer .gist .pl-sv {
+    color: #ec7600;
+}
+.codeContainer .gist .pl-sr,
+.codeContainer .gist .pl-sr .pl-sra,
+.codeContainer .gist .pl-sr .pl-sre,
+.codeContainer .gist .pl-src {
+    color: #d39745;
+}
+.codeContainer .gist .pl-mi1,
+.codeContainer .gist .pl-mdht {
+    color: #e0e2e4;
+    background: rgba(0, 64, 0, .5);
+}
+.codeContainer .gist .pl-md,
+.codeContainer .gist .pl-mdhf,
+.codeContainer .gist .pl-id,
+.codeContainer .gist .pl-ii {
+    color: #e0e2e4;
+    background: rgba(64, 0, 0, .5);
+}

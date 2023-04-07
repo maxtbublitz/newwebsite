@@ -35,6 +35,24 @@ h4{font-family: $primaryTypography; font-weight: 700; font-size: 16px; line-heig
 
 P{font-family: $primaryTypography; font-weight: 400; font-size: 16px; line-height: 24px; margin-bottom: 8px;}
 
+a{
+    color: $secondaryColor;
+    text-decoration: none;
+    i{
+      font-size: $defaultIconSize;
+      width: auto;
+      
+    }
+    p{
+      display: inline-block;
+      font-size: 24px;
+      margin-left: 8px;
+    }
+  }
+  a:hover{
+    color: $primaryColor;
+}
+
 
 /* ------------------------------------- Grids, sizing and breakpoints  -------------------------------------*/
 
