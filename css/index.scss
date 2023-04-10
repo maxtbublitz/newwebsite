@@ -6,6 +6,11 @@ body, html{
     min-height: 100vh;
 }
 
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+
+
 .gridContainer{
     grid-auto-rows: minmax(24px,auto);
 }
@@ -75,7 +80,7 @@ body, html{
         font-family: $primaryTypography;
         font-weight: 500;
         font-size: 108px; 
-        margin-top: -16px;
+        line-height: 96px;
     }
 }
 

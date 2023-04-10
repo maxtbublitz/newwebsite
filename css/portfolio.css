@@ -9,20 +9,13 @@ body {
 }
 
 .gridContainer {
-  grid-auto-rows: minmax(24px, auto);
-}
-
-#portfolioDescription {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-auto-rows: minmax(88px, auto);
 }
 
 #graphicFilter, #uiuxFilter, #webFilter {
-  grid-column: span 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column: span 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 #projectGalleryHolder {
@@ -37,8 +30,19 @@ body {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-end: auto;
   width: 100%;
+}
+
+#filterTitle {
+  grid-row: 1/span 1;
+  grid-column: 1/5;
+  align-self: center;
+}
+
+#filterDesc {
+  grid-row: 2/3;
+  grid-column: 1/13;
 }
 
 .grid-sizer {
@@ -83,17 +87,22 @@ body {
 .descHolder p {
   width: 100%;
   margin-top: 8px;
+  color: black;
 }
 .descHolder h3 {
   width: 80%;
   border-bottom: 2px solid #009AD7;
   margin-bottom: 4px;
   padding-bottom: 4px;
+  color: black;
+}
+.descHolder a {
+  color: black;
 }
 
 .filterContainer {
   width: 100%;
-  height: 40px;
+  height: 100%;
 }
 .filterContainer label {
   width: 100%;
@@ -101,9 +110,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -18px;
   background-color: #EB3300;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 .filterContainer label h3 {
   color: white;
@@ -124,7 +132,6 @@ body {
   border: solid 2px #EB3300;
   background-color: white;
   margin: -2px;
-  margin-top: -20px;
 }
 .filterContainer input:checked + label h3 {
   color: #EB3300;
@@ -157,13 +164,22 @@ body {
     grid-row-end: 4;
     width: 100%;
   }
+  #filterTitle {
+    grid-row: 1/span 1;
+    grid-column: 1/3;
+  }
+  #filterDesc {
+    grid-row: 2/3;
+    grid-column: 1/9;
+  }
   #graphicFilter, #uiuxFilter, #webFilter {
     grid-column: span 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .projectContainer {
     width: 49%;
+    margin-bottom: 128px;
   }
   .grid-sizer {
     width: 49%;
@@ -181,39 +197,43 @@ body {
     width: 100%;
     margin-top: 56px;
   }
-  .filterContainer label {
-    margin-top: 24px;
-  }
   .filterContainer input:checked + label {
     border: solid 2px #EB3300;
     background-color: white;
     margin: -4px;
-    margin-top: 24px;
   }
   .filterContainer input:checked + label h3 {
     color: #EB3300;
   }
+  #filterTitle {
+    grid-row: 1/span 1;
+    grid-column: 1/5;
+  }
+  #filterDesc {
+    grid-row: 2/3;
+    grid-column: 1/5;
+  }
   #graphicFilter, #uiuxFilter, #webFilter {
     margin: 0px;
-    grid-column: span 4;
+    grid-column: span 5;
+    grid-row: span 1;
   }
   #graphicFilter {
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  #uiuxFilter {
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #webFilter {
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+  #uiuxFilter {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  #webFilter {
+    grid-row-start: 5;
+    grid-row-end: 6;
   }
   #filterUI {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row: 3/5;
     width: 100%;
   }
   .projectContainer, .grid-sizer {
@@ -221,6 +241,26 @@ body {
   }
   .gutter-sizer {
     width: 0%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 1101) {
+  .projectContainer {
+    margin-bottom: 160px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 951px) {
+  .projectContainer {
+    margin-bottom: 96px;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 531px) {
+  .projectContainer {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .projectContainer {
+    margin-bottom: 120px;
   }
 }
 

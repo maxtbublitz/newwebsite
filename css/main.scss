@@ -28,12 +28,13 @@ p, h1, h2, h3, h4{
     padding: 0;
 }
 
-h1{font-family: $primaryTypography; font-weight: 600; font-size: 88px; color: black; line-height: 104px; margin-bottom: 32px;}
-h2{font-family: $primaryTypography; font-weight: 400; font-size: 48px; line-height: 56px; margin-bottom: 16px;}
-h3{font-family: $primaryTypography; font-weight: 600; font-size: 24px; line-height: 32px; margin-bottom: 8px;}
-h4{font-family: $primaryTypography; font-weight: 700; font-size: 16px; line-height: 24px; margin-bottom: 8px;}
+h1{font-family: $primaryTypography; font-weight: 600; font-size: 4.5em; color: black; line-height: 104px; margin-bottom: 32px;}
+h2{font-family: $secondaryTypography; font-weight: 600; font-size: 2.5em; line-height: 1em; margin-bottom: 1.5em;}
+// h2{font-family: $displayTypography; font-weight: 400; font-size: 48px; line-height: 56px; margin-bottom: 16px; text-transform: uppercase;}
+h3{font-family: $displayTypography; font-weight: 600; font-size: 1.5em; line-height: 1.5em; margin-bottom: .25em;}
+h4{font-family: $primaryTypography; font-weight: 700; font-size: 1em; line-height: 1.5em; margin-bottom: .25em;}
 
-P{font-family: $primaryTypography; font-weight: 400; font-size: 16px; line-height: 24px; margin-bottom: 8px;}
+P{font-family: $primaryTypography; font-weight: 400; font-size: 1em; line-height: 1.5em; margin-bottom: .25em;}
 
 a{
     color: $secondaryColor;
@@ -45,12 +46,15 @@ a{
     }
     p{
       display: inline-block;
-      font-size: 24px;
-      margin-left: 8px;
     }
   }
   a:hover{
     color: $primaryColor;
+}
+
+.iconLink{
+    font-size: 24px;
+    margin-left: 8px;
 }
 
 
@@ -64,12 +68,12 @@ main{
     padding-top: $topMargin;
 }
 
-.gridContainer, .subGrid{ /* Used to contain nearly all elements, 12 8 4 setup */
+.gridContainer, .subGrid, .gridContainer2{ /* Used to contain nearly all elements, 12 8 4 setup */
     position:relative;
     display: grid;
     
     grid-column-gap: $desktopGridGap;
-    grid-row-gap: 16px;
+    grid-row-gap: 24px;
     
     align-items: start;
     justify-items: start;
@@ -82,12 +86,17 @@ main{
     grid-template-columns: repeat(auto-fill, $desktopColumnWidth);
 }
 
-.gridContainer{
+.gridContainer, .gridContainer2{
     grid-template-columns: repeat(12, $desktopColumnWidth);
+    
     
     width: $desktopContainerWidth;
 
-    margin-bottom: 96px;
+    margin-bottom: $desktopRowHeight;
+}
+
+.gridContainer{
+    grid-auto-rows: $desktopRowHeight;
 }
 
 /* Default grid elements */
@@ -103,6 +112,8 @@ main{
     width: 100%;
     grid-column-start: 1; grid-column-end: 7; grid-row-start: 1; grid-row-end: 2;  
     overflow: hidden;
+    height: $desktopRowHeight*1.28;
+    
 
     h1{
         animation: moveHeading;
@@ -111,8 +122,25 @@ main{
     }
 }
 
+.defaultGridImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.defaultGridImage2{
+    width: 100%;
+    height: auto;
+}
+
+.sectionTitle{
+    width: 100%;
+    border-bottom: 3px solid $primaryColor;
+    padding-bottom: 8px;
+}
+
 @media screen and (max-width:$tabletBreakpoint) and (min-width:651px){ /* default tablet grid */
-    .gridContainer, .subGrid{
+    .gridContainer, .subGrid, .gridContainer2{
         grid-template-columns: repeat(8, 1fr);
         grid-gap: $tabletGaps;
         width: auto;
@@ -128,7 +156,7 @@ main{
 }
 
 @media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
-    .gridContainer, .subGrid{
+    .gridContainer, .subGrid, .gridContainer2{
         grid-template-columns: repeat(4, 1fr);
         grid-gap: $mobileGaps;
         width: auto;
@@ -144,8 +172,8 @@ main{
         grid-column-start: 1; grid-column-end: 5; grid-row-start: 1; grid-row-end: auto;  
     }
 
-    h2{font-size: 32px;}
-    h1{font-size: 56px;}
+    h2{font-size: 2em;}
+    h1{font-size: 3.5em;}
     
 }
 

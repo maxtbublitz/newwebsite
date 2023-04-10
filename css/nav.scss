@@ -2,6 +2,10 @@
 
 /* --------------------------- Navigation, footer and links --------------------------- */
 
+#navContainer{ /* override the default row settings */
+  grid-auto-rows: auto;
+}
+
 header{
     position: absolute;
     top:0;
