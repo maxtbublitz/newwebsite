@@ -164,6 +164,10 @@ main{
         margin-left: $mobileMargins;
     }
 
+    .gridContainer{
+        grid-auto-rows: $desktopRowHeight;
+    }
+
     .subGrid{
         margin: 0;
     }

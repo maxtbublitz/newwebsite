@@ -7,11 +7,14 @@
     <title>Technical Booklets</title>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="javascript/modernizr.2.5.3.min.js"></script>
+    <script src="javascript\turn.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
     
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/breatheasy.css">
+    <link rel="stylesheet" href="css/techbooklets.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/gistStyler.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -33,20 +36,95 @@
         <div class="gridContainer" id="section1">
 
             <div id="headline" class="defaultModule">
-                <h1 id="moveHeading">Technical Booklets</h1>
+                <h1 id="moveHeading">Booklets</h1>
             </div>
 
+            <div id="heading1">
             <h2>Purpose</h2>
             <p>Vita Aerospace and Vita Industrial solve an issue that occurs in each of their respective industries: the spin of slung loads. Each company manufactures a load stabilization device to help workers in the aerospace and construction industries control loads underneath helicopters and cranes.</p>
             <p>As relativley new products, the Vita Rescue System and Vita Load Navigator are constantly undergoing alterations, and a single document for each product was needed for internal use to display the most current features and specifications. These booklets also have a dual sales function, and are given to customers in the sales funnel who are already familiar with the product. Up to the release of the product manuals, they were the primary material shown to potential customers at demos and trade shows.</p>
+            </div>
 
             <img src="photos\VRS-VLN1000.jpg" alt="" id="coverImage" class="defaultGridImage">
   
         </div>
 
         <div class="gridContainer" id="section2">
+            <h2 id="title1" class="sectionTitle">Lineart</h2>
+            <div id="heading2">
+                <p>Lineart was used in order to clearly convey system measurements and information. The engineering department was able to provide a 3D model for the Navigator, but the Rescue System file was too large to work with. I created a simplified 3D model of the rescue system using the grasshopper plugin in Rhinoceros 360.</p>
+            </div>
+            <div id="heading3">
+                <h3>Generating Lineart</h3>
+                <p>Rhinoceros 360 was also used to generate the images in the file.Some images in the Navigator booklet were generated directly from engineering.</p>
+            </div>
+
+            <img src="photos\Rescue-Trial.jpg" alt="" id="imgContainer1" class="defaultGridImage2">
+            <img src="photos\VRS-Doors.jpg" alt="" id="imgContainer2" class="defaultGridImage2">
+            <img src="photos\MollePendant.jpg" alt="" id="imgContainer3" class="defaultGridImage2">
+            <img src="photos\Compass1.jpg" alt="" id="imgContainer4" class="defaultGridImage2">
+            <img src="photos\Charger-Iso.jpg" alt="" id="imgContainer5" class="defaultGridImage2">
             
         </div>
+
+        <div class="gridContainer" id="section2">
+            <h2 class="sectionTitle" id="title2">Renders</h2>
+
+            <img src="photos\VLN3149.jpg" alt="" id="imgContainer6" class="defaultGridImage">
+            <img src="photos\VLN-M1000.jpg" alt="" id="imgContainer7" class="defaultGridImage">
+            <img src="photos\VLN-Pages1.jpg" alt="" id="imgContainer8" class="defaultGridImage">
+            <img src="photos\VLN-Cover3.jpg" alt="" id="imgContainer14" class="defaultGridImage">
+            <img src="photos\VRS-VLN-Combined.jpg" alt="" id="imgContainer9" class="defaultGridImage">
+            <img src="photos\VRS-Booklet7000.jpg" alt="" id="imgContainer10" class="defaultGridImage">
+            <img src="photos\VRS-Cover-Folded.jpg" alt="" id="imgContainer11" class="defaultGridImage">
+            <img src="photos\VRS-Booklet4000.jpg" alt="" id="imgContainer12" class="defaultGridImage">
+            <img src="photos\VRS-Booklet5000.jpg" alt="" id="imgContainer13" class="defaultGridImage">
+        </div>
+
+        <div class="gridContainer" id="section3">
+
+            <h2 class="sectionTitle" id="title3">Flipbook</h2>
+
+            <div id="flipbookContainer">
+                <div id="flipbook" class="flipbook shadow">
+                    <div class="page"><img src="photos\VLN_Page_01.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_02.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_03.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_04.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_05.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_06.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_07.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_08.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_09.jpg"></div>
+                    <div class="page"><img src="photos\VLN_Page_10.jpg"></div>
+                </div>
+            </div>
+            
+
+            <script type="text/javascript">
+                var containerWidth = $(flipbookContainer).width();
+                $("#flipbook").turn({
+                    width: containerWidth,
+                    height: containerWidth/1.5,
+                    autoCenter: true
+                });
+            </script>
+
+        </div>
+
+        <script type="text/javascript">
+
+            var flipbookEL = document.getElementById('flipbook');
+              window.addEventListener('resize', function (e) {
+              var temp = parseInt(flipbookEL.style.width);
+
+              flipbookEL.style.width = '';
+              flipbookEL.style.height = '';
+
+              $(flipbookEL).turn('size', flipbookEL.clientWidth, temp/1.5);
+            });
+
+        </script>
 
     </main>
 

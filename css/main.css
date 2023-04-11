@@ -189,6 +189,9 @@ main {
     margin-right: 16px;
     margin-left: 16px;
   }
+  .gridContainer {
+    grid-auto-rows: 88px;
+  }
   .subGrid {
     margin: 0;
   }
