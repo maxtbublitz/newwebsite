@@ -36,10 +36,10 @@
             </div>
 
             
-            <img src="photos\anesthesia.jpg" alt="" id="coverImg" class="defaultGridImage">
+            <img src="photos\anesthesia.jpg" alt="" id="coverImg" class="defaultGridImage" data-aos="fade-in">
 
-            <h2 id="tagline">This is a scary sight for anybody</h2>
-            <h3 id="subheading">Imagine how frightening this experience can be for a young child</h3>
+            <h2 id="tagline" data-aos="fade-in" data-aos-duration="2000" >This is a scary sight for anybody</h2>
+            <h3 id="subheading" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="2000">Imagine how frightening this experience can be for a young child</h3>
             
             
 
@@ -53,7 +53,7 @@
                 <p>The prevailing method employed to lower anxiety is to let the child play a game on an iPad. This has seen some success, however, an immersive and interactive experience could prove to be much more succesfull.</p>
             </div> 
 
-            <img src="photos\breatheasyLogo.png" alt="" id="breatheasyLogo" class="defaultGridImage2">
+            <img src="photos\breatheasyLogo.png" alt="" id="breatheasyLogo" class="defaultGridImage2" data-aos="fade-right">
 
             <div id="heading3">
                 <h3>The Breatheasy Solution</h3>
@@ -71,9 +71,9 @@
                 <p>Doug Dietz is an industrial designer who wanted to better this dreadfull experience for children. He and his team designed themed enviornments around the MRI machine that engage the childs imagination, and incorporated the machine into these enviornments. The MRI rooms are transformed from bleak, sterile rooms to immersive spaces.</p>
             </div>
 
-            <img src="photos\MRI-Bleak.jpg" alt="" class="defaultGridImage" id="imgContainer2">
+            <img src="photos\MRI-Bleak.jpg" alt="" class="defaultGridImage" id="imgContainer2" data-aos="fade-up">
 
-            <img src="photos\MRI-Designed.jpg" alt="" class="defaultGridImage" id="imgContainer3">
+            <img src="photos\MRI-Designed.jpg" alt="" class="defaultGridImage" id="imgContainer3" data-aos="fade-up">
 
             
             <div id="heading5">
@@ -91,14 +91,14 @@
                 <p>A virtual experience on its own would not be inticing enough to the childs imagination. An element was needed that would tie the physical world to the virtual experience. The mask was chosen as the element to help assosiate the experience and game, as the mask and game were designed with a common theme.</p>
             </div>
 
-            <img src="photos\PediatricMask.jpg" alt="" class="defaultGridImage" id="imgContainer4">
+            <img src="photos\PediatricMask.jpg" alt="" class="defaultGridImage" id="imgContainer4" data-aos="fade-up">
             
             <div id="heading7">
                 <h3>Theme</h3>
                 <p>An underwater theme was chosen for the project. This way, the anesthesiologist could tell the child that they'd need to put on the mask to breathe underwater to play. The mask was designed to look like a fish, and the child is allowed to pick between a few masks at the start of the experience, giving them a small but important sense of control over the experience.</p>
             </div>
 
-            <img src="photos\masks.jpg" alt="" class="defaultGridImage" id="imgContainer5">
+            <img src="photos\masks.jpg" alt="" class="defaultGridImage" id="imgContainer5" data-aos="fade-up">
 
             <div id="heading8">
                 <h3>Levels</h3>
@@ -114,7 +114,7 @@
                 <p>The Adafruit nRF52382 is compact and has bluetooth capabilities.</p>
             </div>
             <div id="imgContainer6">
-                <img src="photos\nRF52832.jpg" alt="" class="defaultGridImage">
+                <img src="photos\nRF52832.jpg" alt="" class="defaultGridImage3" data-aos="fade-in">
             </div>
 
             <div id="heading10">
@@ -122,7 +122,7 @@
                 <p>The Sparkfun si7021 board detects changes in temperature, meaning it can detect when the user exhales. A CO2 sensor was also tested, but readings were not as accurate.</p>
             </div>
             <div id="imgContainer7">
-                <img src="photos\si7021.jpg" alt="" class="defaultGridImage">
+                <img src="photos\si7021.jpg" alt="" class="defaultGridImage3" data-aos="fade-in">
             </div>
 
 
@@ -131,7 +131,7 @@
                 <p>A <a href="https://www.sparkfun.com/products/13854">3.7V lithium ion battery</a> is used to power the board. These batteries can be recharged with a LiPo charger.</p>
             </div>
             <div id="imgContainer8">
-                <img src="photos\lithiumbattery.jpg" alt="" class="defaultGridImage">
+                <img src="photos\lithiumbattery.jpg" alt="" class="defaultGridImage3" data-aos="fade-in">
             </div>
 
             <div id="heading12">
@@ -139,7 +139,7 @@
                 <p>Designed using the grasshopper plugin in Rhinoceros 360, the enclosure is made up of three pieces that house all the components. It was printed on an STL printer.</p>
             </div>
             <div id="imgContainer9">
-                <img src="photos\enclosure.jpg" alt="" class="defaultGridImage">
+                <img src="photos\enclosure.jpg" alt="" class="defaultGridImage3" data-aos="fade-in">
             </div>
         </div>
 
@@ -176,7 +176,7 @@
 
         <div class="gridContainer" id="section6">
 
-            <h2 id="title5">Implementation</h2>
+            <h2 id="title5" class="sectionTitle">Implementation</h2>
 
             <div id="heading15">
                 <h3>Video Documentation</h3>
@@ -184,7 +184,7 @@
                 <br>
             </div>
 
-            <div id="video1">
+            <div id="video1" data-aos="fade-up">
                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/486988042?h=509cb965f7" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             </div>
             
@@ -201,6 +201,19 @@
     $(function(){
     $("#footer").load("footer.html");
     });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
 </script>
 
 

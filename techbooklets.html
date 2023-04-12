@@ -59,34 +59,36 @@
                 <p>Rhinoceros 360 was also used to generate the images in the file.Some images in the Navigator booklet were generated directly from engineering.</p>
             </div>
 
-            <img src="photos\Rescue-Trial.jpg" alt="" id="imgContainer1" class="defaultGridImage2">
-            <img src="photos\VRS-Doors.jpg" alt="" id="imgContainer2" class="defaultGridImage2">
-            <img src="photos\MollePendant.jpg" alt="" id="imgContainer3" class="defaultGridImage2">
-            <img src="photos\Compass1.jpg" alt="" id="imgContainer4" class="defaultGridImage2">
-            <img src="photos\Charger-Iso.jpg" alt="" id="imgContainer5" class="defaultGridImage2">
+            <img src="photos\Rescue-Trial.jpg" alt="" id="imgContainer1" class="defaultGridImage2" data-aos="zoom-in">
+            <img src="photos\VRS-Doors.jpg" alt="" id="imgContainer2" class="defaultGridImage2" data-aos="zoom-in">
+            <img src="photos\MollePendant.jpg" alt="" id="imgContainer3" class="defaultGridImage2" data-aos="zoom-in">
+            <img src="photos\Compass1.jpg" alt="" id="imgContainer4" class="defaultGridImage2" data-aos="zoom-in">
+            <img src="photos\Charger-Iso.jpg" alt="" id="imgContainer5" class="defaultGridImage2" data-aos="zoom-in">
             
         </div>
 
         <div class="gridContainer" id="section2">
             <h2 class="sectionTitle" id="title2">Renders</h2>
 
-            <img src="photos\VLN3149.jpg" alt="" id="imgContainer6" class="defaultGridImage">
-            <img src="photos\VLN-M1000.jpg" alt="" id="imgContainer7" class="defaultGridImage">
-            <img src="photos\VLN-Pages1.jpg" alt="" id="imgContainer8" class="defaultGridImage">
-            <img src="photos\VLN-Cover3.jpg" alt="" id="imgContainer14" class="defaultGridImage">
-            <img src="photos\VRS-VLN-Combined.jpg" alt="" id="imgContainer9" class="defaultGridImage">
-            <img src="photos\VRS-Booklet7000.jpg" alt="" id="imgContainer10" class="defaultGridImage">
-            <img src="photos\VRS-Cover-Folded.jpg" alt="" id="imgContainer11" class="defaultGridImage">
-            <img src="photos\VRS-Booklet4000.jpg" alt="" id="imgContainer12" class="defaultGridImage">
-            <img src="photos\VRS-Booklet5000.jpg" alt="" id="imgContainer13" class="defaultGridImage">
+            <img src="photos\VLN3149.jpg" alt="" id="imgContainer6" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VLN-M1000.jpg" alt="" id="imgContainer7" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VLN-Pages1.jpg" alt="" id="imgContainer8" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VLN-Cover3.jpg" alt="" id="imgContainer14" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VRS-VLN-Combined.jpg" alt="" id="imgContainer9" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VRS-Booklet7000.jpg" alt="" id="imgContainer10" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VRS-Cover-Folded.jpg" alt="" id="imgContainer11" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VRS-Booklet4000.jpg" alt="" id="imgContainer12" class="defaultGridImage" data-aos="fade-up">
+            <img src="photos\VRS-Booklet5000.jpg" alt="" id="imgContainer13" class="defaultGridImage" data-aos="fade-up">
         </div>
 
         <div class="gridContainer" id="section3">
 
             <h2 class="sectionTitle" id="title3">Flipbook</h2>
 
+            <p id="heading4">Click on the corners of the pages to turn the book.</p>
+
             <div id="flipbookContainer">
-                <div id="flipbook" class="flipbook shadow">
+                <div id="flipbook" class="flipbook shadow" data-aos="zoom-in">
                     <div class="page"><img src="photos\VLN_Page_01.jpg"></div>
                     <div class="page"><img src="photos\VLN_Page_02.jpg"></div>
                     <div class="page"><img src="photos\VLN_Page_03.jpg"></div>
@@ -106,10 +108,26 @@
                 $("#flipbook").turn({
                     width: containerWidth,
                     height: containerWidth/1.5,
-                    autoCenter: true
+                    autoCenter: false
                 });
             </script>
 
+        </div>
+
+        <div class="gridContainer" id="section4">
+            <h2 class="sectionTitle" id="title4">PDF Downloads</h2>
+            <div id="download1">
+                <a href="PDF\VLN-Digital.pdf" download>
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <p class="iconLink">Vita Load Navigator</p>
+                </a>
+            </div>
+            <div id="download2">
+                <a href="PDF\VRS-Digital.pdf" download>
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <p class="iconLink">Vita Rescue System</p>
+                </a>
+            </div>
         </div>
 
         <script type="text/javascript">
@@ -136,6 +154,19 @@
     $(function(){
     $("#footer").load("footer.html");
     });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
 </script>
 
 

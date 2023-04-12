@@ -160,6 +160,12 @@ main {
   height: auto;
 }
 
+.defaultGridImage3 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .sectionTitle {
   width: 100%;
   border-bottom: 3px solid #EB3300;
@@ -190,7 +196,7 @@ main {
     margin-left: 16px;
   }
   .gridContainer {
-    grid-auto-rows: 88px;
+    grid-template-rows: minmax(48px, auto);
   }
   .subGrid {
     margin: 0;
