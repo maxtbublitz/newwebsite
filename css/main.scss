@@ -110,7 +110,7 @@ main{
     border-bottom: 3px solid $primaryColor;
 
     width: 100%;
-    grid-column-start: 1; grid-column-end: 7; grid-row-start: 1; grid-row-end: 2;  
+    grid-column-start: 1; grid-column-end: 9; grid-row-start: 1; grid-row-end: 2;  
     overflow: hidden;
     height: $desktopRowHeight*1.28;
     
@@ -163,7 +163,7 @@ main{
     }
 
     .gridContainer{
-        grid-auto-rows: minmax($desktopRowHeight, auto);
+        grid-auto-rows: minmax($desktopRowHeight, max-content);
     }
 
     .subGrid{

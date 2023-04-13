@@ -134,6 +134,8 @@ nav a:hover {
   grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 1;
+  font-family: Scandia, Verdana, sans-serif;
+  color: #EB3300;
 }
 
 /* Code below from codeSTACKr */
