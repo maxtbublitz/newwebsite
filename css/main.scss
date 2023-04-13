@@ -145,6 +145,14 @@ main{
     padding-bottom: 8px;
 }
 
+.bgwhite{ background-color: white; border: 1px solid black; margin: -1px;}
+.bgblack{ background-color: black; }
+
+.colorDiv{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;}
+
+.colorDiv h4{ text-transform: uppercase;}
+
+
 @media screen and (max-width:$tabletBreakpoint) and (min-width:651px){ /* default tablet grid */
     .gridContainer, .subGrid, .gridContainer2{
         grid-template-columns: repeat(8, 1fr);
@@ -152,6 +160,10 @@ main{
         width: auto;
         margin-right: $tabletSideMargins;
         margin-left: $tabletSideMargins;
+    }
+
+    .gridContainer{
+        grid-auto-rows: minmax($desktopRowHeight, auto);
     }
 
     .subGrid{
@@ -164,14 +176,16 @@ main{
 @media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
     .gridContainer, .subGrid, .gridContainer2{
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: $mobileGaps;
+        column-gap: $mobileGaps;
+        row-gap: 16px;
+        
         width: auto;
         margin-right: $mobileMargins;
         margin-left: $mobileMargins;
     }
 
     .gridContainer{
-        grid-template-rows:minmax(48px,auto);
+        grid-auto-rows:minmax(36px,max-content);
     }
 
     .subGrid{

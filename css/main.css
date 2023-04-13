@@ -172,6 +172,29 @@ main {
   padding-bottom: 8px;
 }
 
+.bgwhite {
+  background-color: white;
+  border: 1px solid black;
+  margin: -1px;
+}
+
+.bgblack {
+  background-color: black;
+}
+
+.colorDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.colorDiv h4 {
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */
   .gridContainer, .subGrid, .gridContainer2 {
     grid-template-columns: repeat(8, 1fr);
@@ -179,6 +202,9 @@ main {
     width: auto;
     margin-right: 40px;
     margin-left: 40px;
+  }
+  .gridContainer {
+    grid-auto-rows: minmax(88px, auto);
   }
   .subGrid {
     margin: 0;
@@ -190,13 +216,14 @@ main {
 @media screen and (max-width: 650px) { /* default mobile grid */
   .gridContainer, .subGrid, .gridContainer2 {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8px;
+    column-gap: 12px;
+    row-gap: 16px;
     width: auto;
     margin-right: 16px;
     margin-left: 16px;
   }
   .gridContainer {
-    grid-template-rows: minmax(48px, auto);
+    grid-auto-rows: minmax(36px, max-content);
   }
   .subGrid {
     margin: 0;
