@@ -8,6 +8,15 @@ body {
   background-color: rgb(253, 253, 253);
 }
 
+#swoosh2 {
+  position: absolute;
+  min-width: 40%;
+  max-width: 500px;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
 .gridContainer {
   grid-auto-rows: minmax(88px, auto);
 }
@@ -188,6 +197,13 @@ body {
   .gutter-sizer {
     width: 2%;
   }
+  #swoosh2 {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 48px;
+    right: 0;
+  }
 }
 @media screen and (max-width: 650px) {
   #projectGalleryHolder {
@@ -246,6 +262,9 @@ body {
   }
   .gutter-sizer {
     width: 0%;
+  }
+  #swoosh2 {
+    display: none;
   }
 }
 

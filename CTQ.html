@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visuailization</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/ctq.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/gistStyler.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>
+    
+    <header id="header" class="header">
+        <script>
+            $(function(){
+            $("#header").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <main>
+
+        <div class="gridContainer" id="section1">
+
+            <div id="headline" class="defaultModule">
+                <h1 id="moveHeading">Audio Visualization</h1>
+            </div>
+
+            <h3 id="heading1">
+                This experimental audio visualization was made using Adobe After Effects. The music in the video is "Cómo Te Quiero" by Khruangbin.
+            </h3>
+
+            <img src="photos\prjt-cover-qtc.jpg" alt="" id="coverImage" class="defaultGridImage">
+  
+        </div>
+
+        <div class="gridContainer" id="section2">
+            <h2 class="sectionTitle" id="title2">Full Video</h2>
+            <div class="defaultGridImage" id="video1">
+
+                <div style="padding-bottom:56.25%; position:relative; height:0; overflow:hidden;"><iframe src="https://www.youtube.com/embed/woSUc5ZuqiA" width="100%" height="100%" style="position:absolute;top:0;left:0;width:100%;height:100%"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+
+        <div class="gridContainer" id="section2">
+            <h2 class="sectionTitle" id="title3">Instagram Video</h2>
+            <video id="video2" class="defaultGridImage" playsinline controls>
+                <source src="videos\QTC.mp4" type='video/mp4;'>
+            </video>
+        </div>
+
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+<script>
+    $(function(){
+    $("#footer").load("footer.html");
+    });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
+</script>
+
+
+</html>

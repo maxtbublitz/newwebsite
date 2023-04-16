@@ -37,6 +37,7 @@ h1,h2,h3,h4,p{
     padding:0;  
 
     h2{
+        font-family: $primaryTypography;
         font-weight: 600;
         font-size: 56px;
         margin-bottom: -20px;
@@ -61,6 +62,7 @@ h1,h2,h3,h4,p{
         font-family: $primaryTypography;
         animation: movesub;
         animation-duration: $animationTime;
+        font-size: 1.2em;
     }
 }
 

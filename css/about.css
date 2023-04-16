@@ -19,6 +19,24 @@
   grid-row: 3/7;
 }
 
+#swoosh2 {
+  position: absolute;
+  min-width: 40%;
+  max-width: 500px;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
+#swoosh3 {
+  position: absolute;
+  min-width: 24%;
+  max-width: 300px;
+  height: auto;
+  bottom: -100px;
+  left: 0;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */
   #tagline {
     grid-column: 1/5;
@@ -31,6 +49,14 @@
   #aboutCover {
     grid-column: 5/9;
     grid-row: 3/6;
+  }
+  #swoosh2 {
+    max-width: 60%;
+    height: auto;
+    z-index: 2;
+  }
+  #swoosh3 {
+    display: none;
   }
 }
 @media screen and (max-width: 650px) { /* default mobile grid */
@@ -45,6 +71,16 @@
   #aboutCover {
     grid-column: 1/5;
     grid-row: 4/8;
+  }
+  #swoosh2 {
+    max-width: 56%;
+    height: auto;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+  }
+  #swoosh3 {
+    display: none;
   }
 }
 

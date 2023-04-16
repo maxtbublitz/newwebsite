@@ -111,8 +111,8 @@ main{
 
     width: 100%;
     grid-column-start: 1; grid-column-end: 9; grid-row-start: 1; grid-row-end: 2;  
-    overflow: hidden;
-    height: $desktopRowHeight*1.28;
+    overflow-y: hidden;
+    // height: $desktopRowHeight*1.28;
     
 
     h1{
@@ -171,6 +171,7 @@ main{
     }
 
     h2{font-size: 40px;}
+
 }
 
 @media screen and (max-width:$mobileBreakpoint){ /* default mobile grid */
@@ -198,6 +199,11 @@ main{
 
     h2{font-size: 2em;}
     h1{font-size: 3.5em;}
+
+    .defaultGridImage{
+        width: 100%;
+        height: auto;
+    }
     
 }
 

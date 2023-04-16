@@ -190,6 +190,8 @@ body{
     .gutter-sizer{
         width: 2%;
     }
+
+    #swoosh2{ position: absolute; width: 40%; height: auto; top: 48px; right: 0;}
 }
 
 @media screen and (max-width:$mobileBreakpoint){
@@ -250,6 +252,8 @@ body{
     .gutter-sizer{
         width: 0%;
     }
+
+    #swoosh2{ display: none;}
 }
 
 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Savings Calculator</title>
+
+    <link rel="stylesheet" href="css/calculatorActual.css">
+</head>
+<body>
+
+    <div id="bgFill"></div>
+
+    <div id="mainContainer">
+        <div id="innerFill"></div>
+       
+        <h1 id="title">Savings Calculator</h1>
+        <div id="line"></div>
+        <p id="calcDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, maxime explicabo aliquam ipsam, fuga optio debitis temporibus odit ratione excepturi deleniti pariatur voluptate suscipit. Sunt vero illum reiciendis quae ut.</p>
+    
+        <div id="logoImage" class="gridItem">
+            <p>LOGO</p>
+        </div>
+
+        <h2 id="heading1" class="gridItem">Your Dolor Information</h2>
+
+        <div id="dropdownHolder">
+            <div class="selectBox gridItem" id="dropdown1">
+                <select class = "form-control" name="" id="makeDropDown"><option value = "Select Helicopter"></option></select>
+            </div>
+            <div class="selectBox gridItem" id="dropdown2">
+                <select class = "form-control" name="" id="modelDropDown"><option value = "Select Helicopter"></option></select>
+            </div>
+        </div>
+
+        <div class="gridItem" id="freeResponse">
+            <form>
+                <div class="freeResponse">
+                    <p>W cost per X</p>
+                    <input type="text" id="fuel">
+                </div>
+                <div class="freeResponse">
+                    <p>Z completed per month</p>
+                    <input type="text" id="hoists">
+                </div>
+                <div class="freeResponse">
+                    <p>Average time to complete a W</p>
+                    <input type="text" id="hoistTime">
+                </div>
+            </form>
+        </div>
+
+        <button type="button" id="roiSubmit" class="gridItem">Calculate Savings</button>
+
+
+        <h2 id="heading2" class="gridItem">Your Savings</h2>
+
+        <table id="table1">
+			<tr>
+				<th></th>
+				<th class = "theading">2x</th>
+				<th class = "theading">3x</th>
+				<th class = "theading">4x</th>
+			</tr>
+			<tr>
+				<td class = "sheading">Lorems Saved Per Year</td>
+				<td id="2xFh">---</td>
+				<td id="3xFh">---</td>
+				<td id="4xFh">---</td>
+			</tr>
+			<tr>
+				<td class = "sheading">Ipsum Savings Per Year</td>
+				<td id="2xOcs">---</td>
+				<td id="3xOcs">---</td>
+				<td id="4xOcs">---</td>
+			</tr>
+			<tr>
+				<td class = "sheading">Dolor Cost Savings Per Year</td>
+				<td id="2xFcs">---</td>
+				<td id="3xFcs">---</td>
+				<td id="4xFcs">---</td>
+			</tr>
+			<tr>
+				<td class = "sheading">Total Cost Savings Per Year</td>
+				<td id="2xTcs">---</td>
+				<td id="3xTcs">---</td>
+				<td id="4xTcs">---</td>
+			</tr>
+			<tr>
+				<td class = "sheading">Payback Period in Years</td>
+				<td id="2xPbp">---</td>
+				<td id="3xPbp">---</td>
+				<td id="4xPbp">---</td>
+			</tr>
+		</table>
+                
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascript/calculator.js"></script>
+</body>
+</html>
+

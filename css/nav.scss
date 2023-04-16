@@ -23,11 +23,13 @@ footer{
     width: 100%;
     padding:0;
     padding-top: 48px;
-    padding-bottom: 88px;
+    padding-bottom: 24px;
 
     z-index: 8;
     background-color: white;
     border-top: 3px solid $primaryColor;
+
+    overflow: hidden;
 }
 
 .header{
@@ -181,6 +183,8 @@ nav{
     transform:translateY($moveNav);
   }
 
+  #footerArt{width: 32%; height: auto; position: absolute; right: 0; bottom: 0; margin: 0; padding: 0;}
+
   @media screen and (max-width:$tabletBreakpoint)  and (min-width:651px){
     #imgIcon{ /*logo icon*/
       grid-column-start:8;
@@ -192,6 +196,8 @@ nav{
         grid-column-end: 9;
         grid-row-start: 1;
     }
+
+    #footerArt{ width: 50%; height:auto;}
   }
 
 @media screen and (max-width:$mobileBreakpoint){
@@ -232,6 +238,8 @@ nav{
     #footerCaption{
       grid-row-start: 5;
     }
+
+    #footerArt{ width: 72%; height:auto;}
 }
 
 

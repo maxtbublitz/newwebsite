@@ -203,3 +203,103 @@
     #imgContainer30{ grid-column: 1/span 6; grid-row: 10/span 4}
 
 }
+
+@media screen and (max-width:$mobileBreakpoint){
+    #heading1{ grid-column: 1/4; grid-row: 2/3;}
+    #imgContainer1{ grid-column: 1/span 4; grid-row: 3/7;}
+
+    /* 
+    -------------------------------------------------------------------- */
+
+    #title2{ grid-column: 1/5; grid-row: 1/span 1;}
+
+    #heading2{ grid-column: 1/span 4; grid-row: 2/span 4;}
+
+
+    #imgContainer2{ grid-column: 1/span 4; grid-row: 3/span 3;}
+    #imgContainer3{ grid-column: 1/span 2; grid-row: 6/span 2;}
+    #imgContainer4{ grid-column: 3/span 2; grid-row: 6/span 2;}
+
+    #imgContainer5{ grid-column: 1/span 4; grid-row: 8/span 3;}
+    #imgContainer6{ grid-column: 1/span 2; grid-row: 11/span 2;}
+    #imgContainer7{ grid-column: 3/span 2; grid-row: 11/span 2;}
+
+    #imgContainer8{ grid-column: 1/span 4; grid-row: 13/span 3;}
+    #imgContainer9{ grid-column: 1/span 2; grid-row: 16/span 2;}
+    #imgContainer10{ grid-column: 3/span 2; grid-row: 16/span 2;}
+
+    #heading3{ grid-column: 1/span 4; grid-row: 19/span 1; }
+
+    #primaryColor{ grid-column: 1/span 4; grid-row: 20/span 4; }
+    #secondaryColor{ grid-column: 1/span 4; grid-row: 24/span 4;}
+    #grayColor{ grid-column: 1/span 4; grid-row: 28/span 4; }
+
+    /* -------------------------------------------------------------------- */
+
+    #heading4{grid-column: 1/span 4; grid-row: 33/span 1;}
+
+    #montserratTitle{grid-column: 1/5; grid-row: 34/span 1;}
+    #montserratUpper{ grid-column: 1/5; grid-row: 35/span 1;}
+    #montserratLower{ grid-column: 1/5; grid-row: 36/span 1;}
+    #montserratNumbers{ grid-column: 1/5; grid-row: 37/span 1;}
+
+    #montserratRegular{grid-column: 1/5; grid-row: 38/span 1;}
+    #montserratItalic{grid-column: 1/5; grid-row: 39/span 1;}
+    #montserratBold{grid-column: 1/5; grid-row: 40/span 1;}
+    #montserratBoldItalic{grid-column: 1/5; grid-row: 41/span 1;}
+
+    #GeomTitle{grid-column: 1/5; grid-row: 42/span 1;}
+    #GeomUpper{ grid-column: 1/5; grid-row: 43/span 1; }
+    #GeomLower{ grid-column: 1/5; grid-row: 44/span 1;}
+    #GeomNumbers{ grid-column: 1/5; grid-row: 45/span 1;}
+
+    #GeomRegular{grid-column: 1/5; grid-row: 46/span 1;}
+    #GeomItalic{grid-column: 1/5; grid-row: 47/span 1;}
+    #GeomBold{grid-column: 1/5; grid-row: 48/span 1;}
+    #GeomBoldItalic{grid-column: 1/5; grid-row: 49/span 1;}
+
+    /* -------------------------------------------------------------------- */
+
+    #title3{ grid-column: 1/5; grid-row: 1/span 1; }
+
+    #imgContainer11{grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer12{grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer13{grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer14{grid-column: 1/span 5; grid-row: span 1}
+
+    #imgContainer15{grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer16{grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer17{grid-column: 1/span 5; grid-row: span 1}
+
+    #imgContainer18{display: none;}
+    #imgContainer19{display: none;}
+    #imgContainer20{grid-column: 1/span 5; grid-row: span 1}
+
+    #title4{ grid-column: 1/13; grid-row: 1/span 1; }
+
+    /* -------------------------------------------------------------------- */
+
+    #title4{ grid-column: 1/5;}
+
+    #heading5{ grid-column: 1/5; grid-row: span 1; }
+
+    #imgContainer21{ grid-column: 1/span 5; grid-row: span 1; }
+
+    #imgContainer22{ grid-column: 1/span 5; grid-row: span 1;}
+
+    #imgContainer23{ grid-column: 1/span 5; grid-row: span 1;}
+    #imgContainer24{ grid-column: 1/span 5; grid-row: span 1;}
+    #imgContainer25{ grid-column: 1/span 5; grid-row: span 1;}
+    #imgContainer26{ grid-column: 1/span 5; grid-row: span 1;}
+    #imgContainer27{ grid-column: 1/span 5; grid-row: span 1;}
+
+    /* -------------------------------------------------------------------- */
+
+    #title5{ grid-column: 1/5;}
+    #heading6 { grid-column: 1/5; grid-row: span 1;}
+
+    #imgContainer28{ grid-column: 1/span 5; grid-row: span 1}
+    #imgContainer29{ grid-column: 1/span 5; grid-row: span 1}
+
+    #imgContainer30{ grid-column: 1/span 5; grid-row: span 1} 
+}

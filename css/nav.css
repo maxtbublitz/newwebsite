@@ -26,10 +26,11 @@ footer {
   width: 100%;
   padding: 0;
   padding-top: 48px;
-  padding-bottom: 88px;
+  padding-bottom: 24px;
   z-index: 8;
   background-color: white;
   border-top: 3px solid #EB3300;
+  overflow: hidden;
 }
 
 .header {
@@ -197,6 +198,16 @@ nav a:hover {
   transform: translateY(200px);
 }
 
+#footerArt {
+  width: 32%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 651px) {
   #imgIcon { /*logo icon*/
     grid-column-start: 8;
@@ -206,6 +217,10 @@ nav a:hover {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
+  }
+  #footerArt {
+    width: 50%;
+    height: auto;
   }
 }
 @media screen and (max-width: 650px) {
@@ -242,6 +257,10 @@ nav a:hover {
   }
   #footerCaption {
     grid-row-start: 5;
+  }
+  #footerArt {
+    width: 72%;
+    height: auto;
   }
 }
 

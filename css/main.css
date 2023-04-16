@@ -140,8 +140,7 @@ main {
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 2;
-  overflow: hidden;
-  height: 112.64px;
+  overflow-y: hidden;
 }
 #headline h1 {
   animation: moveHeading;
@@ -239,6 +238,10 @@ main {
   }
   h1 {
     font-size: 3.5em;
+  }
+  .defaultGridImage {
+    width: 100%;
+    height: auto;
   }
 }
 @keyframes moveHeading {

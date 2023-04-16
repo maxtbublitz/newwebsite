@@ -1,0 +1,182 @@
+body{
+    font-family: sans-serif;
+    display: grid;
+    position: relative;
+    grid-template-columns: 
+    [full-start] minmax(1em, 1fr)
+    [main-start] 1096px
+    [main-end] minmax(1em, 1fr) [full-end];
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,p{ margin: 0px;}
+
+.selectBox{width: 100%; }
+
+.selectBox select{
+    width: 100%;
+    height: 100%;
+    background: #DEDEDE;
+    border-radius: 4px;
+    margin:-1px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#dropdown1{
+    width: 100%;
+}
+
+#dropdownHolder{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+
+
+
+#logoImage{
+    border-radius: 50%;
+    background-color: #193D27;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+    width: 80px;
+    height: 80px;
+
+    justify-self: end;
+    
+    grid-column: 4/5;
+
+    grid-row: 1/span 1;
+
+    margin: 0px;
+}
+
+h1{
+    margin: 0px;
+}
+
+h2{
+    border-bottom: 2px solid #193D27;
+    font-weight: 700;
+    width: 100%;
+}
+
+th, td { 
+    margin:0px;
+	padding: 4px;
+	font-size:14px;
+	width: 120px;
+	text-align:left;
+	vertical-align: center;
+	border-bottom: 1px solid black;
+}
+
+th {border-bottom: 2px solid black;}
+
+.sheading{ width: 52%;}
+
+
+.freeResponse{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 32px;
+    margin: -1px;
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.freeResponse input{
+    width: 124px;
+    background-color: #DEDEDE;
+    border: 1px solid black;
+}
+
+button{
+    background-color: #193D27;
+    color:white;
+    font-weight: 800;
+    border-radius: 8px;
+    border: 0px;
+    width: 100%;
+}
+
+button, .selectBox{
+    height: 32px;
+}
+
+#mainContainer{
+    position: relative;
+
+    grid-column: main;
+    z-index:1;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 32px;
+    grid-column-gap: 24px;
+    grid-row-gap: 32px;
+
+    padding-top: 56px;
+    margin-top: 0px;
+
+    align-items: start;
+    justify-items: start;
+}
+
+#bgFill{
+    background-color: #193D27; grid-column: 1/ span 1; width: 100%;
+}
+
+#freeResponse{width: 100%; }
+
+#freeResponse form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+
+#title, #line, #calcDesc{ grid-column: 1/span 1;}
+#title, #calcDesc{ color: white; padding-right: 24px;}
+#title{grid-row: 1/span 2}
+#line{grid-row: 2/span 1;  width: 30%; border-bottom: 2px solid white; height: 2px; align-self: end; margin-top: 24px;}
+#calcDesc{grid-row: 3/span 3;}
+#innerFill{
+    grid-column: 1/2;
+    background-color: #193D27;
+    grid-row: 1/ 16;
+    padding-bottom: 56px;
+    width: 100%;
+    height: 100%;
+    margin-top: -56px;
+}
+
+
+#heading1, #dropdownHolder, #freeResponse, #roiSubmit, #heading2, #table1{ grid-column: 3/span 2; }
+#heading1{ grid-row: 3/span 1;}
+#dropdownHolder{ grid-row: 4/span 1;}
+#freeResponse{ grid-row: 5/span 3;}
+#roiSubmit{ grid-row:8/span 1;}
+
+#heading2{ grid-row:10/span 1;}
+#table1{ grid-row: 11/span 4; border-spacing:0px;}
+
+
