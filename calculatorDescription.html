@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/calculatorDescription.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/gistStyler.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>
+    
+    <header id="header" class="header">
+        <script>
+            $(function(){
+            $("#header").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <main>
+        <div class="gridContainer" id="section1">
+
+            <div id="headline" class="defaultModule">
+                <h1 id="moveHeading">Savings Calculator</h1>
+            </div> 
+
+            <h3 id="heading1">This calculator gives potential customers an estimated return on their investment based on five variables.</h3>
+
+            <p id="heading2">A CSV file is read to group items into makes and models. Names, values and branding have been randomized for client confidentialty.</p>
+
+            <img src="photos\UICalc.jpg" alt="" class="defaultGridImage" id="imgContainer1">
+        </div>
+
+        <div class="gridContainer" id="section2">
+            <h2 class="sectionTitle" id="title2">UI Design</h2>
+
+            <p id="heading3">Figma was used to design the page. Two breakpoints were created to allow for desktop, tablet and mobile displays.</p>
+
+            <img src="photos\calcDesktop.jpg" alt="" class="defaultGridImage2 figmaPic" id="imgContainer3">
+            <img src="photos\calcTablet.jpg" alt="" class="defaultGridImage2 figmaPic" id="imgContainer4">
+            <img src="photos\calcMobile.jpg" alt="" class="defaultGridImage2 figmaPic" id="imgContainer5">  
+
+            <iframe id="figma1" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDVn3ZgK0RSRlTjpUN2nLdL%2FCalculator%3Fnode-id%3D0%253A1%26t%3DJiXQYnbm1Ipvjdm3-1" allowfullscreen></iframe>
+
+            <iframe id="figma2" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDVn3ZgK0RSRlTjpUN2nLdL%2FCalculator%3Fnode-id%3D1-2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2" allowfullscreen></iframe>
+        </div>
+
+        <div class="gridContainer" id="section3">
+            <h2 class="sectionTitle" id="title3">Development</h2>
+
+            <div id="codeContainer1" class="codeContainer">
+                <h3>HTML</h3>
+                <script src="https://gist.github.com/maxtbublitz/4df2ff0fa030f2fa5513e7fc80262cf8.js"></script>
+            </div>
+
+            <div id="codeContainer2" class="codeContainer">
+                <h3>CSS</h3>
+                <script src="https://gist.github.com/maxtbublitz/adbc703399b74583077fad66671600e5.js"></script>
+            </div>
+
+            <div id="codeContainer3" class="codeContainer">
+                <h3>Javascript</h3>
+                <script src="https://gist.github.com/maxtbublitz/d9b8a40f9f2c0332841e427eb1365d32.js"></script>
+            </div>
+
+            <div id="codeContainer4" class="codeContainer">
+                <h3>txt File</h3>
+                <script src="https://gist.github.com/maxtbublitz/b42b2d0d4dcb86d3ef8f6a48b47e076b.js"></script>
+            </div>
+        </div>
+
+        <div class="gridContainer" id="section4">
+            <h2 class="sectionTitle" id="title3">Webpage</h2>
+
+            <p id="heading4">Embeded on this page is the final working webpage. For a for optimal experience, click on the icon below to be redirected to the page.</p>
+
+            <a id="heading5" href="calculatorActual.html">
+                <i class="fa-solid fa-globe"></i>
+                <p class="iconLink">Webpage</p>
+            </a>
+
+            <iframe id="webpage" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="calculatorActual.html" allowfullscreen></iframe>
+        </div>
+
+
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+<script>
+    $(function(){
+    $("#footer").load("footer.html");
+    });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
+</script>
+
+
+</html>

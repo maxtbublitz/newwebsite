@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: Montserrat, sans-serif;
     display: grid;
     position: relative;
     grid-template-columns: 
@@ -8,6 +8,29 @@ body{
     [main-end] minmax(1em, 1fr) [full-end];
     padding: 0;
     margin: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#mainContainer{
+    position: relative;
+
+    grid-column: main;
+    z-index:1;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 32px;
+    grid-column-gap: 24px;
+    grid-row-gap: 32px;
+
+    padding-top: 56px;
+    margin-top: 0px;
+
+    align-items: start;
+    justify-items: start;
 }
 
 h1,h2,h3,p{ margin: 0px;}
@@ -49,13 +72,9 @@ h1,h2,h3,p{ margin: 0px;}
 
     width: 80px;
     height: 80px;
-
     justify-self: end;
-    
     grid-column: 4/5;
-
     grid-row: 1/span 1;
-
     margin: 0px;
 }
 
@@ -63,17 +82,13 @@ h1{
     margin: 0px;
 }
 
-h2{
-    border-bottom: 2px solid #193D27;
-    font-weight: 700;
-    width: 100%;
-}
+h2{ border-bottom: 2px solid #193D27; font-weight: 700; width: 100%; padding-bottom: 2px;}
 
 th, td { 
     margin:0px;
 	padding: 4px;
 	font-size:14px;
-	width: 120px;
+	width: 210px;
 	text-align:left;
 	vertical-align: center;
 	border-bottom: 1px solid black;
@@ -82,7 +97,6 @@ th, td {
 th {border-bottom: 2px solid black;}
 
 .sheading{ width: 52%;}
-
 
 .freeResponse{
     width: 100%;
@@ -118,26 +132,6 @@ button{
 
 button, .selectBox{
     height: 32px;
-}
-
-#mainContainer{
-    position: relative;
-
-    grid-column: main;
-    z-index:1;
-
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 32px;
-    grid-column-gap: 24px;
-    grid-row-gap: 32px;
-
-    padding-top: 56px;
-    margin-top: 0px;
-
-    align-items: start;
-    justify-items: start;
 }
 
 #bgFill{
@@ -179,4 +173,145 @@ button, .selectBox{
 #heading2{ grid-row:10/span 1;}
 #table1{ grid-row: 11/span 4; border-spacing:0px;}
 
+@media screen and (max-width: 1150px) and (min-width: 651px){
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
 
+        justify-content: center;
+
+    }
+
+    #mainContainer{
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 64px;
+        padding-right: 64px;
+        width: 100%;
+    
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(16px, auto);
+        grid-column-gap: 16px;
+        grid-row-gap: 24px;
+    }
+
+    #innerFill{ display: none;}
+
+    #title, #calcDesc{ color: white; padding-right: 0px;}
+
+    #bgFill{
+        background-color: #193D27;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        height:288px;
+    }
+
+    #logoImage{
+        background-color: white;
+        color: #193D27;
+        font-size: .85em;
+    
+        width: 64px;
+        height: 64px;
+        grid-column: 4/5;
+        grid-row: 1/span 2;
+    }
+
+    #title, #line, #calcDesc{ grid-column: 1/4;}
+    #title{ grid-row: 1/span 1;}
+    #line{ grid-row: 2/span 1; align-self: start; width: 168px;}
+    #calcDesc{ grid-row: 3/span 1;}
+
+    #heading1, #dropdownHolder, #freeResponse, #roiSubmit, #heading2, #table1{ grid-column: 1/span 4; }
+
+    #heading1{ grid-row: 6/span 1;}
+    #dropdownHolder{ grid-row: 7/span 1;}
+    #freeResponse{ grid-row: 8/span 3;}
+    #roiSubmit{ grid-row:11/span 1;}
+
+    #heading2{ grid-row:13/span 1;}
+    #table1{ grid-row: 14/span 4; border-spacing:0px;}
+
+    #freeResponse form{
+        gap: 24px;
+    }
+
+
+}
+
+@media screen and (max-width: 650px){
+    h1{ font-size: 1.75em;}
+    h2{ font-size: 1.25em;}
+    p, td, th{ font-size: .75em;}
+
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    #mainContainer{
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 112px;
+        width: 100%;
+    
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(16px, auto);
+        grid-column-gap: 8px;
+        grid-row-gap: 24px;
+    }
+
+    #innerFill{ display: none;}
+
+    #title, #calcDesc{ color: white; padding-right: 0px;}
+
+    #bgFill{
+        background-color: #193D27;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        height:288px;
+    }
+
+    #logoImage{
+        background-color: white;
+        color: #193D27;
+        font-size: .75em;
+    
+        width: 48px;
+        height: 48px;
+        grid-column: 4/5;
+        grid-row: 1/span 2;
+    }
+
+    #title, #line{ grid-column: 1/4;}
+    #calcDesc{ grid-column: 1/5;}
+    #title{ grid-row: 1/span 1;}
+    #line{ grid-row: 2/span 1; align-self: start; width: 168px;}
+    #calcDesc{ grid-row: 3/span 1;}
+
+    #heading1, #dropdownHolder, #freeResponse, #roiSubmit, #heading2, #table1{ grid-column: 1/span 4; }
+
+    #heading1{ grid-row: 6/span 1;}
+    #dropdownHolder{ grid-row: 7/span 1;}
+    #freeResponse{ grid-row: 8/span 3;}
+    #roiSubmit{ grid-row:11/span 1;}
+
+    #heading2{ grid-row:13/span 1;}
+    #table1{ grid-row: 14/span 4; border-spacing:0px;}
+
+    #freeResponse form{
+        gap: 24px;
+    }
+}
