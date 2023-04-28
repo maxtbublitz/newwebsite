@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Cards</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script> <!-- Filter library -->
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+
+<body>
+    
+    <header id="header" class="header">
+        <script>
+            $(function(){
+            $("#header").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <main>
+
+        <div class="gridContainer" id="section1">
+            <div id="headline" class="defaultModule">
+                <h1 id="moveHeading">Sports Cards</h1>
+            </div>
+
+            <p id="heading1">This is a personal project I am working on. Each card displays each member of the 2022 Colorado Avalanche Stanley Cup team. Data taken from Hockey Reference was compiled into a spreadsheet, and the DataMerge function in InDesign was used to read the file.</p>
+
+            <img src="photos\cards-blue.png" alt="" class="defaultGridImage" id="imgContainer1">
+        </div>
+
+        <div class="gridContainer" id="section2">
+            <h2 class="sectionTitle" id="title2">Gallary</h2>
+
+            <div class="card" id="c1Holder">
+                <div class="cardInner" id="C1">
+                    <div class="cardFaceFront">
+                        <img src="photos\Byram-Front.jpg" alt="" class="cardImage">
+                    </div>
+
+                    <div class="cardFaceBack">
+                        <img src="photos\Byram-Back.jpg" alt="" class="cardImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="c2Holder">
+                <div class="cardInner" id="C2">
+                    <div class="cardFaceFront">
+                        <img src="photos\Makar-Front.jpg" alt="" class="cardImage">
+                    </div>
+
+                    <div class="cardFaceBack">
+                        <img src="photos\Makar-Back.jpg" alt="" class="cardImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="c3Holder">
+                <div class="cardInner" id="C3">
+                    <div class="cardFaceFront">
+                        <img src="photos\MacKinnon-Front.jpg" alt="" class="cardImage">
+                    </div>
+
+                    <div class="cardFaceBack">
+                        <img src="photos\MacKinnon-Back.jpg" alt="" class="cardImage">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="c4Holder">
+                <div class="cardInner" id="C4">
+                    <div class="cardFaceFront">
+                        <img src="photos\Rantanen-Front.jpg" alt="" class="cardImage">
+                    </div>
+
+                    <div class="cardFaceBack">
+                        <img src="photos\Rantanen-Back.jpg" alt="" class="cardImage">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+<script>
+    $(function(){
+    $("#footer").load("footer.html");
+    });
+</script>
+
+<script src="javascript/cards.js"></script>
+
+</html>
