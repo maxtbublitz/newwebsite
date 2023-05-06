@@ -120,11 +120,15 @@ main {
 .gridContainer, .gridContainer2 {
   grid-template-columns: repeat(12, 72px);
   width: 1104px;
+}
+
+.gridContainer2 {
   margin-bottom: 88px;
 }
 
 .gridContainer {
   grid-auto-rows: 88px;
+  padding-bottom: 88px;
 }
 
 /* Default grid elements */
@@ -192,6 +196,24 @@ main {
 
 .colorDiv h4 {
   text-transform: uppercase;
+}
+
+.lightText {
+  color: white;
+}
+
+.colorSection, .colorSectionBottom {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 24, 24);
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-top: 88px;
+}
+
+.colorSection {
+  margin-bottom: 88px;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */

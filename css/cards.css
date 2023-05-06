@@ -1,3 +1,13 @@
+@import url("https://use.typekit.net/oip8mrx.css");
+/* ---------------------------------- colors ----------------------------------*/
+/* ---------------------------------- typography ---------------------------------- */
+/* ---------------------------------- grids n stuff ---------------------------------- */
+/* breakpoints and widths */
+/* Navigation Menu */
+main {
+  background-color: rgb(250, 250, 250);
+}
+
 .card {
   position: relative;
   perspective: 2000px;
@@ -5,7 +15,6 @@
 
 #c1Holder, #c2Holder, #c3Holder, #c4Holder {
   width: 100%;
-  height: auto;
 }
 
 .flipCard {
@@ -19,27 +28,219 @@
 }
 
 .cardInner {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   transform-style: preserve-3d;
-  transition: all 1.5s ease;
+  transition: all 0.5s ease-in;
 }
 
 .cardFaceFront {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   backface-visibility: hidden;
 }
 
 .cardFaceBack {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: fit-content;
   backface-visibility: hidden;
   transform: rotateY(-180deg);
+}
+
+#imgContainer3, #imgContainer2 {
+  box-shadow: 3px 4px 5px rgba(2, 2, 2, 0.61);
+}
+
+.labelSection {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.labelsRight {
+  justify-content: flex-end;
+}
+.labelsRight .sectionLine {
+  margin-right: 8px;
+}
+
+.labelsLeft {
+  justify-content: flex-start;
+}
+.labelsLeft .sectionLine {
+  margin-left: 8px;
+}
+.labelsLeft .sectionLabel {
+  text-align: right;
+}
+
+.sectionLine {
+  border: 1px solid #009AD7;
+  height: 0px;
+}
+
+.sectionLabel {
+  min-width: 72px;
+  margin: 0;
+}
+
+.cardLabels {
+  overflow: hidden;
+}
+
+#title3 {
+  grid-column: 1/span 12;
+}
+
+#imgContainer2 {
+  grid-column: 2/span 4;
+  grid-row: 2/span 5;
+}
+
+#cardLabelsLeft1 {
+  grid-column: 1/span 3;
+  grid-row: 2/span 5;
+  width: 100%;
+  height: 100%;
+}
+
+#cardLabelsRight1 {
+  grid-column: 4/span 3;
+  grid-row: 2/span 5;
+  width: 100%;
+  height: 100%;
+}
+
+#numberLabel {
+  margin-top: 147%;
+}
+
+#captainLabel {
+  margin-top: 11%;
+}
+
+#lineNumber {
+  width: 67%;
+}
+
+#lineCaptain, #lineYears {
+  width: 10%;
+}
+
+#nameLabel {
+  margin-top: 156%;
+}
+
+#positionLabel {
+  margin-top: 3%;
+}
+
+#lineName {
+  width: 58%;
+}
+
+#linePosition {
+  width: 67%;
+}
+
+#imgContainer3 {
+  grid-column: 8/span 4;
+  grid-row: 2/span 5;
+}
+
+#cardLabelsLeft2 {
+  grid-column: 7/span 4;
+  grid-row: 2/span 5;
+  width: 100%;
+  height: 100%;
+}
+
+#cardLabelsRight2 {
+  grid-column: 9/span 4;
+  grid-row: 2/span 5;
+  width: 100%;
+  height: 100%;
+}
+
+#position2Label {
+  margin-top: 24%;
+}
+
+#shootsLabel {
+  margin-top: -2%;
+}
+
+#nationLabel {
+  margin-top: 5%;
+}
+
+#statsLabel {
+  margin-top: 24%;
+}
+
+#skillsLabel {
+  margin-top: 17%;
+}
+
+#linePosition2, #lineShoots {
+  width: 55%;
+}
+
+#lineNation {
+  width: 30%;
+}
+
+#lineStats, #lineSkills {
+  width: 12%;
+}
+
+#name2Label {
+  margin-top: 9%;
+}
+
+#heightLabel {
+  margin-top: 8%;
+}
+
+#weightLabel, #bornLabel {
+  margin-top: -2%;
+}
+
+#draftLabel {
+  margin-top: 0%;
+}
+
+#bioLabel {
+  margin-top: 5%;
+}
+
+#lineName2 {
+  width: 35%;
+}
+
+#lineHeight {
+  width: 17%;
+}
+
+#lineWeight {
+  width: 13%;
+}
+
+#lineDraft, #lineBorn {
+  width: 17%;
+}
+
+#lineBio {
+  width: 14%;
+}
+
+#section2 {
+  background-color: rgb(19, 24, 24);
 }
 
 #heading1 {
@@ -53,7 +254,7 @@
 }
 
 #title2 {
-  grid-column: 1/span 13;
+  grid-column: 1/span 12;
   grid-row: 1/span 1;
 }
 
@@ -75,6 +276,301 @@
 #c4Holder {
   grid-column: 1/span 4;
   grid-row: 7/span 5;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 651px) { /* default tablet grid */
+  .card {
+    height: 55vw;
+  }
+  #c1Holder, #c2Holder, #c3Holder, #c4Holder {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sectionLabel {
+    font-size: 2vw;
+    min-width: 25%;
+  }
+  .labelSection {
+    height: 2vw;
+  }
+  #heading1 {
+    grid-row: 3/span 4;
+    grid-column: 1/span 4;
+  }
+  #imgContainer1 {
+    grid-row: 3/span 4;
+    grid-column: 5/span 5;
+  }
+  #title3 {
+    grid-column: 1/span 8;
+  }
+  #imgContainer2 {
+    grid-column: 3/span 4;
+    grid-row: 2/span 1;
+  }
+  #cardLabelsLeft1 {
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+  }
+  #cardLabelsRight1 {
+    grid-column: 5/span 4;
+    grid-row: 2/span 1;
+  }
+  #imgContainer3 {
+    grid-column: 3/span 4;
+    grid-row: 4/span 1;
+  }
+  #cardLabelsLeft2 {
+    grid-column: 1/span 5;
+    grid-row: 4/span 1;
+  }
+  #cardLabelsRight2 {
+    grid-column: 4/span 5;
+    grid-row: 4/span 1;
+  }
+  #title2 {
+    grid-column: 1/span 8;
+    grid-row: 1/span 1;
+  }
+  #c1Holder {
+    grid-column: 1/5;
+    grid-row: 2/span 1;
+  }
+  #c2Holder {
+    grid-column: 5/9;
+    grid-row: 2/span 1;
+  }
+  #c3Holder {
+    grid-column: 1/5;
+    grid-row: 4/span 1;
+  }
+  #c4Holder {
+    grid-column: 5/9;
+    grid-row: 4/span 1;
+  }
+  #numberLabel {
+    margin-top: 108%;
+  }
+  #captainLabel {
+    margin-top: 11%;
+  }
+  #yearsLabel {
+    margin-top: 1%;
+  }
+  #lineNumber {
+    width: 70%;
+  }
+  #lineCaptain, #lineYears {
+    width: 28%;
+  }
+  #nameLabel {
+    margin-top: 115%;
+  }
+  #positionLabel {
+    margin-top: 3%;
+  }
+  #position2Label {
+    margin-top: 20%;
+  }
+  #shootsLabel {
+    margin-top: 0%;
+  }
+  #nationLabel {
+    margin-top: 5%;
+  }
+  #statsLabel {
+    margin-top: 22%;
+  }
+  #skillsLabel {
+    margin-top: 15%;
+  }
+  #linePosition2, #lineShoots {
+    width: 55%;
+  }
+  #lineNation {
+    width: 30%;
+  }
+  #lineStats, #lineSkills {
+    width: 20%;
+  }
+  #name2Label {
+    margin-top: 9%;
+  }
+  #heightLabel {
+    margin-top: 7%;
+  }
+  #weightLabel, #bornLabel {
+    margin-top: 0%;
+  }
+  #draftLabel {
+    margin-top: 2%;
+  }
+  #bioLabel {
+    margin-top: 5%;
+  }
+  #lineName2 {
+    width: 35%;
+  }
+  #lineHeight {
+    width: 25%;
+  }
+  #lineWeight {
+    width: 19%;
+  }
+  #lineDraft, #lineBorn {
+    width: 25%;
+  }
+  #lineBio {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card {
+    height: 110vw;
+  }
+  #c1Holder, #c2Holder, #c3Holder, #c4Holder {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sectionLabel {
+    font-size: 2vw;
+    min-width: 25%;
+  }
+  .labelSection {
+    height: 2vw;
+  }
+  #heading1 {
+    grid-row: 3/span 1;
+    grid-column: 1/span 5;
+  }
+  #imgContainer1 {
+    grid-row: 4/span 3;
+    grid-column: 1/span 5;
+  }
+  #title3 {
+    grid-column: 1/span 4;
+  }
+  #imgContainer2 {
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+  }
+  #cardLabelsLeft1 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+  }
+  #cardLabelsRight1 {
+    grid-column: 3/span 2;
+    grid-row: 2/span 1;
+  }
+  #imgContainer3 {
+    grid-column: 2/span 2;
+    grid-row: 4/span 1;
+  }
+  #cardLabelsLeft2 {
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+  }
+  #cardLabelsRight2 {
+    grid-column: 3/span 2;
+    grid-row: 4/span 1;
+  }
+  #title2 {
+    grid-column: 1/span 4;
+    grid-row: 1/span 1;
+  }
+  #c1Holder {
+    grid-column: 1/5;
+    grid-row: 2/span 1;
+  }
+  #c2Holder {
+    grid-column: 1/5;
+    grid-row: 3/span 1;
+  }
+  #c3Holder {
+    grid-column: 1/5;
+    grid-row: 4/span 1;
+  }
+  #c4Holder {
+    grid-column: 1/5;
+    grid-row: 5/span 1;
+  }
+  #numberLabel {
+    margin-top: 108%;
+  }
+  #captainLabel {
+    margin-top: 11%;
+  }
+  #yearsLabel {
+    margin-top: 1%;
+  }
+  #lineNumber {
+    width: 70%;
+  }
+  #lineCaptain, #lineYears {
+    width: 28%;
+  }
+  #nameLabel {
+    margin-top: 115%;
+  }
+  #positionLabel {
+    margin-top: 3%;
+  }
+  #position2Label {
+    margin-top: 20%;
+  }
+  #shootsLabel {
+    margin-top: 0%;
+  }
+  #nationLabel {
+    margin-top: 5%;
+  }
+  #statsLabel {
+    margin-top: 22%;
+  }
+  #skillsLabel {
+    margin-top: 15%;
+  }
+  #linePosition2, #lineShoots {
+    width: 55%;
+  }
+  #lineNation {
+    width: 30%;
+  }
+  #lineStats, #lineSkills {
+    width: 20%;
+  }
+  #name2Label {
+    margin-top: 12%;
+  }
+  #heightLabel {
+    margin-top: 9%;
+  }
+  #weightLabel, #bornLabel {
+    margin-top: 0%;
+  }
+  #draftLabel {
+    margin-top: 2%;
+  }
+  #bioLabel {
+    margin-top: 5%;
+  }
+  #lineName2 {
+    width: 45%;
+  }
+  #lineHeight {
+    width: 35%;
+  }
+  #lineWeight {
+    width: 30%;
+  }
+  #lineDraft, #lineBorn {
+    width: 35%;
+  }
+  #lineBio {
+    width: 32%;
+  }
 }
 
 /*# sourceMappingURL=cards.css.map */

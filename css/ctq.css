@@ -4,6 +4,10 @@
 /* ---------------------------------- grids n stuff ---------------------------------- */
 /* breakpoints and widths */
 /* Navigation Menu */
+main {
+  background-color: rgb(17, 17, 17);
+}
+
 #heading1 {
   grid-column: 1/4;
   grid-row: 3/5;

@@ -1,5 +1,7 @@
 @import "variables";
 
+main{ background-color: $darkBackgroundColor;}
+
 #heading1{ grid-column: 1/4; grid-row: 3/5}
 #coverImage{ grid-column: 5/13; grid-row: 3/7}
 
