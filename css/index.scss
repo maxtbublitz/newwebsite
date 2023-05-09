@@ -3,7 +3,8 @@ $animationTime: 2s;
 
 body, html{
     top:0;
-    min-height: 100vh;
+    // min-height: 100vh;
+    // max-height: fit-content;
 }
 
 h1,h2,h3,h4,p{
@@ -15,9 +16,9 @@ h1,h2,h3,h4,p{
     grid-auto-rows: minmax(24px,auto);
 }
 
-#particleContainer{
-    height: 100vh;
-}
+// #particleContainer{
+//     min-height: 100vh;
+// }
 
 #coverVideo{
     grid-column-start: 1;
@@ -86,6 +87,64 @@ h1,h2,h3,h4,p{
     }
 }
 
+#heroVid{
+    width:100%;
+     height:auto;
+}
+
+/* Recent works section */
+
+#project1{ grid-row: 3/span 3; grid-column: 1/span 4;}
+#project2{ grid-row: 3/span 3; grid-column: 5/span 4;}
+#project3{ grid-row: 3/span 3; grid-column: 9/span 4;}
+
+.projectContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coverImage{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin:0;
+}
+
+.descHolder{
+    position: relative;
+    border-radius: 8px;
+    
+    width: 100%;
+    margin-left:-2px;
+    margin-right:-2px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    bottom: 0px;
+
+    p{
+        width: 100%;
+        margin-top: 8px;
+        color: black;
+    }
+
+    h3{
+        width: 80%;
+        border-bottom: 2px solid $secondaryColor;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        color: black;
+    }
+
+    a{
+        color: black;
+    }
+
+}
+
 @media screen and (max-width:$tabletBreakpoint){
     #coverVideo{
         grid-column-start: 1;
@@ -136,11 +195,19 @@ h1,h2,h3,h4,p{
 
 @media screen and (max-width:$mobileBreakpoint){
     #coverVideo{
-        grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 6;
         z-index:2;
+    }
+
+    #heroVid{
+        display: block;
+        width:85%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #mb{
@@ -160,8 +227,8 @@ h1,h2,h3,h4,p{
     #subHolder{
         grid-column-start: 1;
         grid-column-end: 5;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        grid-row-start: 5;
+        grid-row-end: 6;
 
         width:100%;
         align-self: center;
@@ -183,8 +250,9 @@ h1,h2,h3,h4,p{
     #design{
         grid-column-start: 1;
         grid-column-end: 5;
-        grid-row-start: 6;
-        grid-row-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        z-index: 200;
 
         align-self: center;
         justify-self: center;

@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  background(startColor,startColor,startColor);
+  background(255,255,255);
 
   for(let i =  0; i < spouts.length; i++){
     spouts[i].show();
@@ -61,7 +61,7 @@ function changeBackgroundColor() {
 function addSpouts() { // Randomly adds spouts
   var rand = random(1,4);
   for(let k = 0; k < rand; k++){
-    if(spouts.length <= 14){ // Limits the amount of spouts on screen so it doesn't overwhelm the browswer
+    if(spouts.length <= 10){ // Limits the amount of spouts on screen so it doesn't overwhelm the browswer
       spouts.push(new spout(-200,random(400,screen.height-400)));
     }
   }
@@ -76,13 +76,14 @@ class spout{
   constructor(x,y) {
     this.x = x;
     this.y = y;
-    this.r = random(5,30); // Radius of diamond
+    this.r = random(8,20); // Radius of diamond
     this.speed = random(0.5,2);
-    this.amplitude = random(2,6); // Amplitude of sine wave
+    this.amplitude = random(2,4); // Amplitude of sine wave
     this.t = random(0.05,0.3); // Period of wave
-    this.tailLength = random(50,70); // Length of the trail
+    this.tailLength = random(40,60); // Length of the trail
     this.history  = []; // Array that stores history of leading trail
-    this.addMove = random(-0.5,0.5);
+    // this.addMove = random(-0.5,0.5);
+    this.addMove = 0;
     let colorz = [1,2,3,4]; 
     let colorc = random(colorz);
     if(colorc == 1){

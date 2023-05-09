@@ -165,8 +165,87 @@ main{
 	margin-top: $desktopRowHeight;
 }
 
+.colorSection2{
+    $color2space: 64px;
+    width: $desktopContainerWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-left: $color2space;
+    padding-right: $color2space;
+    background-color: $darkBackgroundColor;
+    margin-bottom: $desktopRowHeight;
+    border-radius: 8px;
+}
+
 .colorSection{ //block of color surrounding a gridContainer
     margin-bottom: $desktopRowHeight;
+}
+
+//project containers /////////////////////////////////////////////////
+
+#bottomTitle{ grid-column: 1/span 12; grid-row: 1/span 1; z-index: 5;}
+#randProject1{ grid-column: 1/span 4; grid-row: 2/span 3;}
+#randProject2{ grid-column: 5/span 4; grid-row: 2/span 3;}
+#randProject3{ grid-column: 9/span 4; grid-row: 2/span 3;}
+
+#randProject1, #randProject2, #randProject3{
+    z-index: 5;
+    width: 100%;
+}
+
+.projectContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coverImage{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin:0;
+}
+
+.descHolder{
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    margin-left:-2px;
+    margin-right:-2px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    bottom: 0px;
+
+    p{
+        width: 100%;
+        margin-top: 8px;
+        color: black;
+    }
+
+    p.lightText{
+        color: white;
+    }
+
+    h3{
+        width: 80%;
+        border-bottom: 2px solid $secondaryColor;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+        color: black;
+    }
+
+    h3.lightText{
+        color: white;
+    }
+
+    a{
+        color: black;
+    }
+
 }
 
 
@@ -188,6 +267,8 @@ main{
     }
 
     h2{font-size: 40px;}
+
+    .colorSection2{width: 92%; padding-left: 8px; padding-right: 8px;}
 
 }
 
@@ -221,6 +302,9 @@ main{
         width: 100%;
         height: auto;
     }
+
+    .colorSection2{width: 92%; padding-left: 8px; padding-right: 8px;}
+
     
 }
 

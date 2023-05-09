@@ -30,29 +30,35 @@
 
     <main>
         <div class="gridContainer">
-
             <div id="headline" class="defaultModule">
                 <h1 id="moveHeading">Portfolio</h1>
             </div>
+            <!-- <h3 id="filterDesc">Here is a collection of some selected recent works. Use the buttons as toggles to filter project categories. All categories are initially selected. If no categories are toggled all projects will be displayed.</h3> -->
+        </div>
 
-
-            <div id="filterUI" class="subGrid">
-                <h3 id="filterTitle">Filter Projects</h3>
-                <p id="filterDesc">Use the buttons as toggles to filter project categories. All categories are initially selected. If no categories are toggled all projects will be displayed.</p>
-                <div id="graphicFilter" class="filterContainer">
-                    <input id="graphicCheck" type="checkbox" value=".graphic">
-                    <label for="graphicCheck"><h3>Graphic</h3></label>
-                </div>
-                <div id="webFilter" class="filterContainer">
-                    <input id="webCheck" type="checkbox" value=".web">
-                    <label for="webCheck"><h3>Web</h3></label>
-                </div>
-                <div id="uiuxFilter" class="filterContainer">
-                    <input id="uiuxCheck" type="checkbox" value=".uiux">
-                    <label for="uiuxCheck"><h3>UI/UX</h3></label>
+        <div class="colorSection2" id="section2">
+            <div class="gridContainer" id="filterHolder">
+                <div id="filterUI" class="subGrid">
+                    <h3 id="filterTitle" class="lightText">Filter Projects</h3>
+                    
+                    <div id="graphicFilter" class="filterContainer">
+                        <input id="graphicCheck" type="checkbox" value=".graphic">
+                        <label for="graphicCheck"><h3>Graphic</h3></label>
+                    </div>
+                    <div id="webFilter" class="filterContainer">
+                        <input id="webCheck" type="checkbox" value=".web">
+                        <label for="webCheck"><h3>Web</h3></label>
+                    </div>
+                    <div id="uiuxFilter" class="filterContainer">
+                        <input id="uiuxCheck" type="checkbox" value=".uiux">
+                        <label for="uiuxCheck"><h3>UI/UX</h3></label>
+                    </div>
                 </div>
             </div>
+        </div>
 
+        <div class="colorSection2" id="section3">
+        <div class="gridContainer">
             <div id="projectGalleryHolder" class="grid">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
@@ -86,14 +92,6 @@
                     </div>
                     </a>
                 </div>
-
-                <!-- <div id="project2" class="projectContainer graphic web">
-                    <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
-                    <div class="descHolder" data-aos="fade-in">
-                        <h3>Sport Cards</h3>
-                        <p>Graphic</p>
-                    </div>
-                </div> -->
                 
                 <div id="project5" class="projectContainer graphic">
                     <a href="vitaaerospace.html">
@@ -127,18 +125,15 @@
 
                 <div id="project7" class="projectContainer graphic">
                     <a href="cards.html">
-                    <img class="coverImage" src="\photos\Card-Mockup.jpg" alt="">
+                    <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
                     <div class="descHolder" data-aos="fade-in">
                         <h3>Sports Cards</h3>
                         <p>Graphic</p>
                     </div>
                     </a>
                 </div>
-
             </div>
-
-            
-
+        </div>
         </div>
 
     </main>

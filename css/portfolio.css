@@ -8,15 +8,6 @@ body {
   background-color: rgb(253, 253, 253);
 }
 
-#swoosh2 {
-  position: absolute;
-  min-width: 40%;
-  max-width: 500px;
-  height: auto;
-  top: 0;
-  right: 0;
-}
-
 .gridContainer {
   grid-auto-rows: minmax(88px, auto);
 }
@@ -30,16 +21,21 @@ body {
 #projectGalleryHolder {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 5;
+  grid-row-start: 1;
   grid-row-end: auto;
   width: 100%;
+}
+
+#filterHolder {
+  align-items: center;
+  padding-bottom: 32px;
 }
 
 #filterUI {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 3;
-  grid-row-end: auto;
+  grid-row-start: 1;
+  grid-row-end: 2;
   width: 100%;
 }
 
@@ -50,7 +46,7 @@ body {
 }
 
 #filterDesc {
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 1/13;
 }
 
@@ -96,14 +92,14 @@ body {
 .descHolder p {
   width: 100%;
   margin-top: 8px;
-  color: black;
+  color: white;
 }
 .descHolder h3 {
   width: 80%;
   border-bottom: 2px solid #009AD7;
   margin-bottom: 4px;
   padding-bottom: 4px;
-  color: black;
+  color: white;
 }
 .descHolder a {
   color: black;
@@ -150,7 +146,7 @@ body {
   #projectGalleryHolder {
     grid-column-start: 1;
     grid-column-end: 9;
-    grid-row-start: 5;
+    grid-row-start: 1;
     grid-row-end: auto;
     width: 100%;
   }
@@ -169,8 +165,8 @@ body {
   #filterUI {
     grid-column-start: 1;
     grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 100%;
   }
   #filterTitle {
@@ -209,7 +205,7 @@ body {
   #projectGalleryHolder {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 6;
+    grid-row-start: 1;
     grid-row-end: auto;
     width: 100%;
     margin-top: 56px;
@@ -250,7 +246,7 @@ body {
   #filterUI {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row: 3/5;
+    grid-row: 1/2;
     width: 100%;
   }
   .projectContainer, .grid-sizer {
