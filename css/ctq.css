@@ -4,8 +4,8 @@
 /* ---------------------------------- grids n stuff ---------------------------------- */
 /* breakpoints and widths */
 /* Navigation Menu */
-main {
-  background-color: rgb(17, 17, 17);
+body {
+  background-color: rgb(19, 24, 24);
 }
 
 #heading1 {
@@ -16,6 +16,10 @@ main {
 #coverImage {
   grid-column: 5/13;
   grid-row: 3/7;
+}
+
+#moreProjects {
+  background-color: black;
 }
 
 #title2 {

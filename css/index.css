@@ -12,8 +12,16 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
-.gridContainer {
-  grid-auto-rows: minmax(24px, auto);
+#hero {
+  min-height: 95vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+#section2 {
+  margin-top: 0;
 }
 
 #coverVideo {
@@ -23,56 +31,47 @@ h1, h2, h3, h4, p {
   grid-row-end: 6;
 }
 
-#mb {
+#heroText {
+  grid-column: 7/span 4;
+  grid-row: 2/span 2;
+  width: 100%;
+  height: 100%;
+}
+
+#mb, #design {
   position: relative;
-  grid-column-start: 7;
-  grid-column-end: 11;
-  grid-row-start: 2;
-  grid-row-end: 3;
   margin: 0;
   padding: 0;
+  color: black;
 }
-#mb h2 {
+
+#mb {
   font-family: Scandia, Verdana, sans-serif;
   font-weight: 600;
   font-size: 56px;
   margin-bottom: -20px;
 }
 
-#subHolder {
-  position: relative;
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  margin: 0;
-  padding: 0;
-  align-self: top;
-  justify-self: end;
-}
-#subHolder h3 {
-  text-align: right;
-  font-family: Scandia, Verdana, sans-serif;
-  animation: movesub;
-  animation-duration: 2s;
-  font-size: 1.2em;
-}
-
 #design {
-  position: relative;
-  grid-column-start: 9;
-  grid-column-end: 13;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  margin: 0;
-  padding: 0;
-  align-self: top;
-}
-#design h2 {
   font-family: Scandia, Verdana, sans-serif;
   font-weight: 500;
-  font-size: 108px;
-  line-height: 96px;
+  font-size: 120px;
+  margin-top: 12px;
+  margin-left: -4px;
+}
+
+#squarePic {
+  grid-column: 8/span 1;
+  grid-row: 5/span 1;
+  width: 100%;
+  height: auto;
+  justify-self: end;
+}
+
+#tagline {
+  grid-column: 9/span 4;
+  grid-row: 5/span 3;
+  color: black;
 }
 
 #heroVid {
@@ -82,18 +81,24 @@ h1, h2, h3, h4, p {
 
 /* Recent works section */
 #project1 {
-  grid-row: 3/span 2;
+  grid-row: 3/span 3;
   grid-column: 1/span 4;
 }
 
 #project2 {
-  grid-row: 3/span 2;
+  grid-row: 3/span 3;
   grid-column: 5/span 4;
 }
 
 #project3 {
-  grid-row: 3/span 2;
+  grid-row: 3/span 3;
   grid-column: 9/span 4;
+}
+
+#portfolioLink {
+  grid-row: 2/span 1;
+  grid-column: 1/span 12;
+  margin-top: 32px;
 }
 
 .projectContainer {
@@ -145,131 +150,115 @@ h1, h2, h3, h4, p {
     grid-row-start: 1;
     grid-row-end: 6;
   }
-  #mb {
+  #heroText {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-  #mb h2 {
-    font-size: 40px;
+  #mb {
+    font-size: 48px;
     margin-bottom: -5px;
   }
-  #subHolder {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-  #subHolder h3 {
-    font-size: 16px;
-    text-align: right;
-    font-family: Scandia, Verdana, sans-serif;
-  }
   #design {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    font-size: 88px;
+    margin-top: 0px;
   }
-  #design h2 {
-    font-family: Scandia, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 70px;
-    margin-top: -8px;
+  #squarePic {
+    grid-column: 6/span 1;
+    width: 70%;
+    grid-row: 4/span 1;
+  }
+  #tagline {
+    grid-column: 7/span 4;
+    grid-row: 4/span 1;
+    font-size: 32px;
+  }
+  #section2 {
+    margin-top: -88px;
+  }
+  #project1 {
+    grid-row: 3/span 3;
+    grid-column: 1/span 4;
+  }
+  #project2 {
+    grid-row: 3/span 3;
+    grid-column: 5/span 4;
+  }
+  #project3 {
+    display: none;
+  }
+  #portfolioLink {
+    grid-row: 2/span 1;
+    grid-column: 1/span 7;
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 650px) {
   #coverVideo {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 6;
     z-index: 2;
+    width: 100%;
+  }
+  #heroText {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  #mb {
+    font-size: 48px;
+    margin-bottom: -5px;
+  }
+  #design {
+    font-size: 88px;
+    margin-top: 0px;
+  }
+  #squarePic {
+    grid-column: 1/span 4;
+    width: 10%;
+    grid-row: 7/span 1;
+    justify-self: center;
+  }
+  #tagline {
+    grid-column: 1/span 4;
+    grid-row: 6/span 1;
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   #heroVid {
     display: block;
     width: 85%;
+    margin-top: -40px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
   }
-  #mb {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-self: center;
-    justify-self: center;
+  #section2 {
+    margin-top: 64px;
   }
-  #mb h2 {
-    font-size: 48px;
-    margin-bottom: 0px;
+  #project1 {
+    grid-row: 3/span 1;
+    grid-column: 1/span 4;
   }
-  #subHolder {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-    display: flex;
-    flex-wrap: none;
-    justify-content: space-around;
-    padding: 0px;
+  #project2 {
+    grid-row: 4/span 1;
+    grid-column: 1/span 4;
   }
-  #subHolder h3 {
-    width: 33%;
-    font-size: 6vw;
-    text-align: center;
-    font-family: Scandia, Verdana, sans-serif;
+  #project3 {
+    display: none;
   }
-  #design {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    z-index: 200;
-    align-self: center;
-    justify-self: center;
-  }
-  #design h2 {
-    font-family: Scandia, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 20vw;
-    margin-top: -8px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #design, #mb, #subHolder {
-    animation: moveName;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-}
-@keyframes fadeGrey {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: rgb(250, 250, 250);
-  }
-}
-@keyframes moveName {
-  0% {
-    color: rgba(255, 255, 255, 0);
-    margin-bottom: 300px;
-  }
-  60% {
-    margin-bottom: 300px;
-  }
-  75% {
-    color: rgba(255, 255, 255, 0);
-  }
-  100% {
-    color: black;
-    margin-bottom: 0px;
+  #portfolioLink {
+    grid-row: 5/span 1;
+    grid-column: 1/span 4;
+    margin-top: 32px;
   }
 }
 

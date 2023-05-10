@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Bublitz</title>
+    <link rel="shortcut icon" type="image/png" href="photos\MBfav.png">
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
@@ -13,6 +14,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
 </head>
@@ -31,58 +33,67 @@
             </header>
 
             <main>
+    
+                <div class="gridContainer" id="hero">
 
-                <div class="gridContainer">
-
-                    <div id="coverVideo" class="defaultModule">
+                    <div id="coverVideo">
                         <video  id="heroVid" autoplay muted playsinline loop>
                             <source src="videos\mbNewH.265.mp4" type='video/mp4;codecs=hvc1'>
                             <source src="videos\mbNewvp9.webm" type="video/webm">
                         </video>
                     </div>
 
-                    <div id="mb" class="defaultModule" ><h2>Max Bublitz</h2></div>
-                    <div id="design" class="defaultModule" ><h2>Design</h2></div>
-                    <div id="subHolder" class="defaultModule" >
-                        <h3>Graphic</h3>
-                        <h3>Web</h3>
-                        <h3>UI/UX</h3>
+                    <div id="heroText">
+                        <h2 id="mb" data-aos="fade-down">Max Bublitz</h2>
+                        <h2 id="design" data-aos="fade-up">Design</h2>
                     </div>
+
+                    <img src="photos\blueSquare.png" alt="" id="squarePic" data-aos="zoom-in" data-aos-delay="1500">
+
+                    <h2 id="tagline" data-aos="fade-in" data-aos-delay="2000">Thinking everywhere but inside the box</h2>
 
                 </div>
+                
 
-                <div class="gridContainer" id="section2">
-                    <div id="headline" class="defaultModule">
-                        <h1 id="moveHeading">Recent Work</h1>
-                    </div>
+                <div id="section2" class="colorSection2">
+                    <div class="gridContainer">
+                        <div id="headline" class="defaultModule">
+                            <h1 class="lightText" id="moveHeading">Recent Work</h1>
+                        </div>
 
-                    <div id="project1" class="projectContainer">
-                        <a href="egobro.html">
-                        <img class="coverImage" src="photos\prjct-cover-egobro-old.jpg" alt="">
-                        <div class="descHolder">
-                            <h3>EgoBro</h3>
-                            <p>Graphic + UI/UX</p>
+                        <div id="project1" class="projectContainer">
+                            <a href="egobro.html">
+                            <img class="coverImage" src="photos\prjct-cover-egobro-old.jpg" alt="">
+                            <div class="descHolder">
+                                <h3 class="lightText">EgoBro</h3>
+                                <p class="lightText">Graphic + UI/UX</p>
+                            </div>
+                            </a>
                         </div>
-                        </a>
-                    </div>
-                    
-                    <div id="project2" class="projectContainer">
-                        <a href="vitaaerospace.html">
-                        <img class="coverImage" src="photos\pjct-cover-vita.jpg" alt="">
-                        <div class="descHolder">
-                            <h3>Vita Aerospace</h3>
-                            <p>Graphic</p>
+                        
+                        <div id="project2" class="projectContainer">
+                            <a href="vitaaerospace.html">
+                            <img class="coverImage" src="photos\pjct-cover-vita.jpg" alt="">
+                            <div class="descHolder">
+                                <h3 class="lightText">Vita Aerospace</h3>
+                                <p class="lightText">Graphic</p>
+                            </div>
+                            </a>
                         </div>
-                        </a>
-                    </div>
 
-                    <div id="project3" class="projectContainer">
-                        <a href="cards.html">
-                        <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
-                        <div class="descHolder">
-                            <h3>Sports Cards</h3>
-                            <p>Graphic</p>
+                        <div id="project3" class="projectContainer">
+                            <a href="cards.html">
+                            <img class="coverImage" src="photos\prjt-cover-avalanche.jpg" alt="">
+                            <div class="descHolder">
+                                <h3 class="lightText">Sports Cards</h3>
+                                <p class="lightText">Graphic</p>
+                            </div>
+                            </a>
                         </div>
+
+                        <a id="portfolioLink" href="portfolio.html">
+                            <i class="fa-solid fa-eye fa-beat"></i>
+                            <p class="iconLink">View more projects</p>
                         </a>
                     </div>
                 </div>
@@ -101,7 +112,20 @@
     $("#footer").load("footer.html");
     });
 </script>
-<script src="javascript/particles.js"></script>
+<!-- <script src="javascript/particles.js"></script> -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 300, 
+    duration: 600, 
+    easing: 'ease-in-out', 
+  }
+
+  );
+</script>
 
 
 </html>

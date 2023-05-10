@@ -1,9 +1,11 @@
 @import "variables";
 
-main{ background-color: $darkBackgroundColor;}
+body{ background-color: $darkBackgroundColor;}
 
 #heading1{ grid-column: 1/4; grid-row: 3/5}
 #coverImage{ grid-column: 5/13; grid-row: 3/7}
+
+#moreProjects{ background-color: black;}
 
 #title2{ grid-column: 1/13; grid-row: 1/span 1;}
 #video1{ grid-column: 5/13; grid-row: 2/7;}

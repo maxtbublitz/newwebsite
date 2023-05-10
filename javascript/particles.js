@@ -14,10 +14,14 @@ var canvas;
 
 function setup() {
   let scroll = document.getElementById("particleContainer");
-  // let scrollH = scroll.scrollHeight;
-  canvas = createCanvas(windowWidth, windowHeight);
+  let scrollH = scroll.scrollHeight;
+  canvas = createCanvas(windowWidth, scrollH);
   canvas.position(0,0);
   canvas.style('z-index','-1');
+
+  for(let i=0; i<3; i++){
+    spouts.push(new spout(-200,random(400,screen.height-400)));
+  }
   
   changeBackgroundColor();
   addSpouts();
@@ -61,7 +65,7 @@ function changeBackgroundColor() {
 function addSpouts() { // Randomly adds spouts
   var rand = random(1,4);
   for(let k = 0; k < rand; k++){
-    if(spouts.length <= 10){ // Limits the amount of spouts on screen so it doesn't overwhelm the browswer
+    if(spouts.length <= 8){ // Limits the amount of spouts on screen so it doesn't overwhelm the browswer
       spouts.push(new spout(-200,random(400,screen.height-400)));
     }
   }
@@ -77,7 +81,7 @@ class spout{
     this.x = x;
     this.y = y;
     this.r = random(8,20); // Radius of diamond
-    this.speed = random(0.5,2);
+    this.speed = random(1,2);
     this.amplitude = random(2,4); // Amplitude of sine wave
     this.t = random(0.05,0.3); // Period of wave
     this.tailLength = random(40,60); // Length of the trail
