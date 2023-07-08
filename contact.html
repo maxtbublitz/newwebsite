@@ -19,6 +19,16 @@
     
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4BD725K2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V4BD725K2Z');
+</script>
+
 <body>
     
     <header id="header" class="header">
@@ -43,12 +53,12 @@
                 <input type="hidden" name="_next" value="http://maxbublitz.com/thankYouPage.html">
                 <input type="text" name="_honey" style="display:none">
 
-                <div id="nameQ" class="defaultModule">
+                <div id="nameQ" class="titleQ">
                     <h4>Name</h4>
                     <input type="text" id="aName" name="name" class="shortAnswer" required>
                 </div>
                 
-                <div id="emailQ" class="defaultModule">
+                <div id="emailQ" class="titleQ">
                     <h4>Email</h4>
                     <input type="email" id="aEmail" name="email" class="shortAnswer" required>
                 </div>
@@ -57,7 +67,7 @@
                 <br>
 
         
-                <div id="helpQ" class="defaultModule">
+                <div id="helpQ" class="titleQ">
                     <h4>How can I help?</h4>
 
                     <label class="checkbox">Graphic
@@ -80,7 +90,7 @@
                 <br>
                 <br>
                 
-                <div id="descQ">
+                <div id="descQ" class="titleQ">
                     <h4>Brief description of project/inquiry</h4>
                     <textarea class="longAnswer" name="description" rows="5" cols="33" maxlength="200"></textarea>
                 </div>

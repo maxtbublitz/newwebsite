@@ -79,6 +79,64 @@ h1, h2, h3, h4, p {
   height: auto;
 }
 
+/* Problems section */
+#section1head {
+  grid-column: 1/span 12;
+  grid-row: 1/span 1;
+  color: white;
+  font-size: 3.5em;
+}
+
+.problemCont h3 {
+  color: #EB3300;
+  font-family: Scandia, Verdana, sans-serif;
+  font-size: 2.5em;
+  margin-top: 0px;
+}
+.problemCont h4 {
+  margin-top: 8px;
+  color: white;
+  font-size: 1.5em;
+}
+
+#graphicContainer {
+  grid-column: 4/span 9;
+  grid-row: 2/span 2;
+}
+
+#webContainer {
+  grid-column: 4/span 9;
+  grid-row: 4/span 2;
+}
+
+#uiuxContainer {
+  grid-column: 4/span 9;
+  grid-row: 6/span 2;
+}
+
+#penIcon, #webIcon, #uiuxIcon {
+  width: 100%;
+  height: auto;
+  grid-column: 1/span 2;
+}
+
+#penIcon {
+  grid-row: 2/span 2;
+}
+
+#webIcon {
+  grid-row: 4/span 2;
+}
+
+#uiuxIcon {
+  grid-row: 6/span 2;
+}
+
+#contactLink {
+  grid-row: 8/span 1;
+  grid-column: 1/span 13;
+}
+
 /* Recent works section */
 #project1 {
   grid-row: 3/span 3;
@@ -126,6 +184,7 @@ h1, h2, h3, h4, p {
   margin-top: 8px;
   margin-bottom: 32px;
   bottom: 0px;
+  /* Types of work section */
 }
 .descHolder p {
   width: 100%;
@@ -174,8 +233,42 @@ h1, h2, h3, h4, p {
     grid-row: 4/span 1;
     font-size: 32px;
   }
-  #section2 {
-    margin-top: -88px;
+  /* Problems section */
+  #section1 {
+    grid-row-gap: 40px;
+  }
+  #section1head {
+    grid-column: 1/span 8;
+    grid-row: 1/span 1;
+  }
+  .problemCont h4 {
+    margin-top: 16px;
+  }
+  #graphicContainer {
+    grid-column: 4/span 5;
+    grid-row: 2/span 2;
+  }
+  #webContainer {
+    grid-column: 4/span 5;
+    grid-row: 4/span 2;
+  }
+  #uiuxContainer {
+    grid-column: 4/span 5;
+    grid-row: 6/span 2;
+  }
+  #penIcon, #webIcon, #uiuxIcon {
+    width: 100%;
+    height: auto;
+    grid-column: 1/span 2;
+  }
+  #penIcon {
+    grid-row: 2/span 2;
+  }
+  #webIcon {
+    grid-row: 4/span 2;
+  }
+  #uiuxIcon {
+    grid-row: 6/span 2;
   }
   #project1 {
     grid-row: 3/span 3;
@@ -240,6 +333,50 @@ h1, h2, h3, h4, p {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+  #section1 {
+    margin-top: 12px;
+    text-align: center;
+  }
+  #section1head {
+    grid-column: 1/span 4;
+    grid-row: 1/span 1;
+  }
+  .problemCont h3 {
+    color: #EB3300;
+    width: 100%;
+    text-align: center;
+  }
+  .problemCont h4 {
+    margin-top: 16px;
+    text-align: center;
+  }
+  #graphicContainer {
+    grid-column: 1/span 4;
+    grid-row: 3/span 1;
+  }
+  #webContainer {
+    grid-column: 1/span 4;
+    grid-row: 5/span 1;
+  }
+  #uiuxContainer {
+    grid-column: 1/span 4;
+    grid-row: 7/span 1;
+  }
+  #penIcon, #webIcon, #uiuxIcon {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    grid-column: 2/span 2;
+  }
+  #penIcon {
+    grid-row: 2/span 1;
+  }
+  #webIcon {
+    grid-row: 4/span 1;
+  }
+  #uiuxIcon {
+    grid-row: 6/span 1;
   }
   #section2 {
     margin-top: 64px;

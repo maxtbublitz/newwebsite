@@ -1,17 +1,19 @@
 @import "variables";
 
 #tagline{
-    grid-column: 2 / 6;
+    grid-column: 10 / 13;
     grid-row: 3 / 5;
 }
 
 #paragraph1{
-    grid-column: 2 / 6;
-    grid-row: 5 / 9;
+    grid-column: 10 / 13;
+    grid-row: 5 / 11;
 }
 
-#aboutCover{
-    grid-column: 7 / 13;
+#penVideo{
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 9;
     grid-row: 3 / 7;
 }
 
@@ -21,18 +23,18 @@
 
 @media screen and (max-width:$tabletBreakpoint) and (min-width:651px){ /* default tablet grid */
     #tagline{
-        grid-column: 1 / 5;
-        grid-row: 3 / 5;
+        grid-column: 1 / 9;
+        grid-row: 3 / 4;
     }
 
     #paragraph1{
-        grid-column: 1 / 5;
-        grid-row: 5 / 9;
+        grid-column: 1 / 7;
+        grid-row: 8 / 13;
     }
 
-    #aboutCover{
-        grid-column: 5 / 9;
-        grid-row: 3 / 6;
+    #penVideo{
+        grid-column: 1 / 9;
+        grid-row: 4 / 7;
     }
 
     #swoosh2{ max-width: 60%; height: auto; z-index: 2;}
@@ -48,12 +50,12 @@
 
     #paragraph1{
         grid-column: 1 / 5;
-        grid-row: 9 / 12;
+        grid-row: 6/7;
     }
 
-    #aboutCover{
-        grid-column: 1/5;
-        grid-row: 4 / 8;
+    #penVideo{
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
     }
 
     #swoosh2{ max-width: 56%; height: auto; top: 80px; right: 0; z-index: -1;}

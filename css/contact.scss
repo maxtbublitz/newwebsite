@@ -1,5 +1,13 @@
 @import "variables";
 
+.titleQ{
+    margin-bottom: 8px;
+
+    h4{
+        margin-bottom: -2px;
+    }
+}
+
 textarea {
     resize: none;
 }
@@ -73,7 +81,8 @@ label{
     width: 100%;
     margin: 0;
     border-radius: 8px;
-    height: 24px;
+    height: 32px;
+    font-size: 1em;
 
     color: white;
     background-color: $primaryColor;

@@ -183,7 +183,7 @@ nav{
     transform:translateY($moveNav);
   }
 
-  #footerArt{width: 32%; height: auto; position: absolute; right: 0; bottom: 0; margin: 0; padding: 0;}
+  #footerArt{width: auto; height: 100%; position: absolute; right: 0; bottom: 0; margin: 0; padding: 0;}
 
   @media screen and (max-width:$tabletBreakpoint)  and (min-width:651px){
     #imgIcon{ /*logo icon*/
