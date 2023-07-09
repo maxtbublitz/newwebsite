@@ -1,9 +1,5 @@
 @import "variables";
 
-main{
-    background-color: $lightestGrey;
-}
-
 #project-gal{
     grid-row-gap: 32px;
 }
@@ -12,6 +8,7 @@ main{
     grid-column: 1/span 6;
     grid-row: 1/span 4;
 }
+
 #featuredDesc1{
     
     grid-column: 7/span 6;
@@ -132,25 +129,35 @@ main{
         grid-row-end: 2;  
     }
 
-    #graphicFilter, #uiuxFilter, #webFilter{
-        grid-column: span 2; grid-row-start: 1; grid-row-end: 2;
-    }
-
-    .projectContainer{
-        height: auto;
-        margin-bottom: 2%;
-        width: 49%;
-    }
-
-    .grid-sizer{
-        width: 49%;
+    #project2{
+        grid-column: 1/span 4;
+        grid-row: 1/span 4;
     }
     
-    .gutter-sizer{
-        width: 2%;
+    #project3{
+        grid-column: 5/span 4;
+        grid-row: 1/span 4;
     }
-
-    #swoosh2{ position: absolute; width: 40%; height: auto; top: 48px; right: 0;}
+    
+    #project4{
+        grid-column: 1/span 4;
+        grid-row: 5/span 4;
+    }
+    
+    #project5{
+        grid-column: 5/span 4;
+        grid-row: 5/span 4;
+    }
+    
+    #project6{
+        grid-column: 1/span 4;
+        grid-row: 9/span 4;
+    }
+    
+    #project7{
+        grid-column: 5/span 4;
+        grid-row: 9/span 4;
+    }
 }
 
 @media screen and (max-width:$mobileBreakpoint){
@@ -164,53 +171,57 @@ main{
         margin-top: 56px;
     }
 
-    .filterContainer{
-        input:checked + label {
-        
-            border: solid 2px $primaryColor;
-            background-color: white;
-            margin:-4px;
-            
+    #project2{
+        grid-column: 1/span 4;
+        grid-row: 1/span 1;
+    }
     
-            h3{
-                color: $primaryColor;
-            }
+    #project3{
+        grid-column: 1/span 4;
+        grid-row: 2/span 1;
+    }
+    
+    #project4{
+        grid-column: 1/span 4;
+        grid-row: 3/span 1;
+    }
+    
+    #project5{
+        grid-column: 1/span 4;
+        grid-row: 4/span 1;
+    }
+    
+    #project6{
+        grid-column: 1/span 4;
+        grid-row: 5/span 1;
+    }
+    
+    #project7{
+        grid-column: 1/span 4;
+        grid-row: 6/span 1;
+    }
+
+    #featuredImage1{
+        grid-column: 1/span 4;
+        grid-row: 1/span 1;
+    }
+    
+    #featuredDesc1{ 
+        grid-column: 1/span 4;
+        grid-row: 2/span 1;
+        margin-top: -16px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 24px;
+        p,h2,h3{
+            margin-left: 24px;
         }
     }
 
-    #filterTitle{ grid-row: 1/span 1; grid-column: 1 / 5;}
+    
 
-    #filterDesc{ grid-row: 2/3; grid-column: 1/5; }
 
-    #graphicFilter, #uiuxFilter, #webFilter{
-        margin: 0px;
-        grid-column: span 5;
-        grid-row: span 1;
-    }
-
-    #graphicFilter{grid-row-start: 3; grid-row-end: 4;}
-    #uiuxFilter{grid-row-start: 4; grid-row-end: 5;}
-    #webFilter{grid-row-start: 5; grid-row-end: 6;}
-
-    #filterUI{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row: 1/2;
-        width: 100%;
-    }
-
-    .projectContainer, .grid-sizer{
-        width: 100%;
-    }
-
-    .projectContainer{
-        height: auto;
-        margin-bottom: 2%;
-    }
-
-    .gutter-sizer{
-        width: 0%;
-    }
-
-    #swoosh2{ display: none;}
+    
 }
