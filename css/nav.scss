@@ -14,7 +14,6 @@ header{
     margin:0;
     z-index: 10;
     background-color: white;
-    border-bottom: 3px solid $primaryColor;
 }
 
 footer{
@@ -66,16 +65,16 @@ nav{
     }
 }
 
-#link1, #link2, #link3{ align-self: center; position:absolute;}
+#link1, #link2, #link3{ align-self: center; position:absolute; justify-self: end;}
 
-#link1{ grid-column-start: 1; grid-column-end: 3; }
-#link2{ grid-column-start: 3; grid-column-end: 5; }
-#link3{ grid-column-start: 5; grid-column-end: 7; }
+#link1{ grid-column-start: 4; grid-column-end: 7; }
+#link2{ grid-column-start: 8; grid-column-end: 10; }
+#link3{ grid-column-start: 11; grid-column-end: 13; }
 
 #imgIcon{ /*logo icon*/
     height:48px;
-    grid-column-start:12;
-    grid-column-end: 13;
+    grid-column-start:1;
+    grid-column-end: 2;
     justify-self: end;
     align-self: start;
 }
@@ -187,9 +186,13 @@ nav{
 
   @media screen and (max-width:$tabletBreakpoint)  and (min-width:651px){
     #imgIcon{ /*logo icon*/
-      grid-column-start:8;
-      grid-column-end: 9;
+      grid-column-start:1;
+      grid-column-end: 2;
     }
+
+    #link1{ grid-column-start: 3; grid-column-end: 5; }
+    #link2{ grid-column-start: 5; grid-column-end: 7; }
+    #link3{ grid-column-start: 7; grid-column-end: 9; }
   
     #footerCaption{
         grid-column-start: 5;

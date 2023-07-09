@@ -28,7 +28,7 @@ p, h1, h2, h3, h4{
     padding: 0;
 }
 
-h1{font-family: $primaryTypography; font-weight: 600; font-size: 4.5em; color: black; line-height: 80px; margin-bottom: 32px;}
+h1{font-family: $primaryTypography; font-weight: 300; font-size: 5em; color: $primaryColor; line-height: 80px; margin-bottom: 32px;}
 h2{font-family: $secondaryTypography; font-weight: 600; font-size: 2.5em; line-height: 1em; margin-bottom: 1.5em;}
 // h2{font-family: $displayTypography; font-weight: 400; font-size: 48px; line-height: 56px; margin-bottom: 16px; text-transform: uppercase;}
 h3{font-family: $displayTypography; font-weight: 600; font-size: 1.5em; line-height: 1.5em; margin-bottom: .25em;}
@@ -107,7 +107,7 @@ main{
 }
 
 #headline{
-    border-bottom: 3px solid $primaryColor;
+    border-bottom: 5px solid $primaryColor;
 
     width: 100%;
     grid-column-start: 1; grid-column-end: 9; grid-row-start: 1; grid-row-end: 2;  
